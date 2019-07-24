@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    width: 100%;
+    background-image: url("https://a0.muscache.com/4ea/air/v2/pictures/e53069ef-5a0c-47a6-95e6-872d909df8c1.jpg?t=r:w2263-h1273-sfit,e:fjpg-c75");
+    background-repeat: no-repeat;
+    background-clip: inherit;
+    background-origin: inherit;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo{
+    text-transform: uppercase;
+    margin-left: 5%;
+    margin-top: 30px;
+}
+
+nav{
+    margin-top: 30px;
+    margin-right: 10px;
+}
+
+.topnav a{
+    color: white;
+    padding: 30px 16px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.topnav a:hover{
+    border-bottom: 2px solid white;
+}
+
+.header__main{
+    text-align:  center;
+    margin-top: 150px;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 990px;
+}
+
+.header__place{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+header p{
+    color: #fff;
+    margin-left: 10px;
+}
+
+.main__about{
+    text-align: center;
+    display: grid;
+}
+
+.main__about h2{
+    margin: 150px auto 150px auto;
+    width: 43%;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.main__about img{
+    margin: auto;
+    width: 86%;
+}
+
+.main__unussial{
+}
+.main__about p{
+    margin: auto;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.main__unussial{
+}
+.main__unussial h2{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 150px;
+    font-weight: normal;
+}
+
+.main__unussial p{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.main__unussial .places_cards{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 100px;
+}
+
+.place_card{
+    display: block;
+    width: 40%;
+    margin: 20px;
+    background: #eee;
+}
+.place_card img{
+    margin: 20px;
+    width: 92%;
+}
+
+.card_text{
+    margin: 0px 20px 20px 20px;
+    display: block;
+    text-align: left;
+}
+
+.card_text .card_title{
+    font-size: 11px;
+    color: #999999;
+}
+
+.card_text .card_info{
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.mexico{
+    width: 100%;
+}

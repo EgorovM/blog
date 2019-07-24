@@ -1,0 +1,169 @@
+li{
+    list-style-type: none;
+}
+
+.navbar{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.navbar a{
+    color: #fff;
+}
+
+.navbar.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+}
+.navbar.scrolled a{
+    color: #000;
+}
+
+.about{
+    margin-top: 150px;
+}
+
+.about h2{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.about .swiper-container{
+    margin-top: 50px;
+    width: 80%;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background: #fff !important;
+}
+.swiper-pagination-bullet{
+    background: #fff !important;
+}
+.unussial{
+    margin-top: 150px;
+}
+
+.unussial h2{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.unussial p{
+    margin: auto;
+    margin-bottom: 50px;
+    width: 50%;
+    text-align: center;
+}
+
+.unussial .card{
+    width: 80%;
+    margin: auto;
+}
+
+.unussial .swiper-container{
+    margin-top: 150px;
+    width: 80%;
+}
+
+.site-sections{
+    background-color: #eee;
+    margin-top: 150px;
+}
+
+.site-sections h2{
+    padding: 50px 0;
+    text-align: center;
+}
+
+.site-sections .sections{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+.site-sections .sections .card{
+    margin-left: 20px;
+    width: 33%;
+}
+.site-sections .sections .card .card-body h4 a .info{
+    font-size: 14px;
+    color: #212121;
+}
+.site-sections .sections .card .card-body h4 a .text{
+    color: #757575;
+}
+.another-directions{
+    width: 80%;
+    margin: auto;
+    margin-top: 150px;
+}
+
+.another-directions h2{
+    text-align: center;
+}
+
+.another-directions .continents{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.another-directions .continents .continent p{
+    font-weight: bold;
+}
+
+.another-directions .continents ul{
+    margin-block-start: 0;
+    padding-inline-start: 0;
+}
+.another-directions .continents li{
+    margin-top: 15px;
+}
+.another-directions h3{
+    text-align: center;
+    padding: 50px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.another-directions h3 span{
+    color: #c639ff;
+}
+
+
+@media (max-width: 1000px) {
+    .about h2{
+        font-size: 22px;
+        width: 80%;
+    }
+
+    .about .swiper-container{
+        width: 100%;
+    }
+
+    .unussial h2{
+        text-align: left;
+        width: 80%;
+    }
+    .unussial p{
+        text-align: left;
+        width: 80%;
+    }
+    .unussial .swiper-container{
+        width: 100%;
+    }
+
+    .site-sections:not(:first-child){
+
+    }
+    .another-directions .continents{
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 991px) {
+
+}

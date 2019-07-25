@@ -1,3 +1,7 @@
+body{
+    font-family: 'Roboto', sans-serif !important;
+}
+
 li{
     list-style-type: none;
 }
@@ -27,11 +31,23 @@ li{
     margin: auto;
     width: 50%;
     text-align: center;
+    color: #212121 !important;
 }
 
 .about .swiper-container{
     margin-top: 50px;
     width: 80%;
+}
+.swiper-title{
+    color: #fff;
+    font-weight: bold !important;
+    font-size: 32px;
+
+}
+.swiper-text{
+    color: #fff;
+    font-weight: lighter;
+    font-size: 22px;
 }
 .swiper-pagination-bullet.swiper-pagination-bullet-active{
     background: #fff !important;
@@ -54,6 +70,7 @@ li{
     margin-bottom: 50px;
     width: 50%;
     text-align: center;
+    color: #000;
 }
 
 .unussial .card{
@@ -61,6 +78,15 @@ li{
     margin: auto;
 }
 
+.card-title{
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #757575 !important;
+}
+
+.card-text{
+    color: #212121 !important;
+}
 .unussial .swiper-container{
     margin-top: 150px;
     width: 80%;
@@ -74,6 +100,7 @@ li{
 .site-sections h2{
     padding: 50px 0;
     text-align: center;
+    font-weight: 500;
 }
 
 .site-sections .sections{
@@ -89,10 +116,12 @@ li{
 }
 .site-sections .sections .card .card-body h4 a .info{
     font-size: 14px;
-    color: #212121;
+    color: #212121 !important;
+    font-weight: 500;
 }
 .site-sections .sections .card .card-body h4 a .text{
-    color: #757575;
+    color: #757575 !important;
+    font-weight: lighter;
 }
 .another-directions{
     width: 80%;

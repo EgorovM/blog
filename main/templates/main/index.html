@@ -48,6 +48,7 @@
 
     <!-- Libs -->
     <link rel="stylesheet" href="{% static 'assets/vendor/libs/swiper/swiper.css' %}">
+    <script src="https://kit.fontawesome.com/ba974a8480.js"></script>
 </head>
 
 
@@ -63,18 +64,39 @@
             <div class="navbar-collapse collapse" id="header-16">
                 <div class="navbar-nav">
                     <a class="nav-item nav-link active" href="#">Главная</a>
-                    <a class="nav-item nav-link dropdown-toggle" href="#">Разделы</a>
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" data-trigger="hover">Разделы</a>
+                        <div class=" dropdown-menu">
+                            <a class="dropdown-item" href="#">Ссылка</a>
+                            <a class="dropdown-item" href="javascript:void(0)">Ссылка</a>
+                            <a class="dropdown-item" href="javascript:void(0)">Ссылка</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="javascript:void(0)">Ссылка</a>
+                        </div>
+                    </div>
                     <a class="nav-item nav-link" href="#">О нас</a>
                     <a class="nav-item nav-link" href="#">Контакты</a>
                 </div>
 
                 <div class="navbar-nav align-items-lg-center ml-auto">
-                    <a class="nav-item nav-link mr-lg-2" href="#">
-                        <i class="ion ion-logo-twitter text-twitter text-big align-middle"></i>
-                        <span class="d-lg-none align-middle">&nbsp; Twitter</span>
+                    <a class="nav-item nav-link mr-lg-4" href="#">
+                        <i class="fab fa-youtube" style="color: #FF0000"></i>
+                        <span class="d-lg-none align-middle">&nbsp; YouTube </span>
                     </a>
                     <a class="nav-item nav-link mr-lg-4" href="#">
-                        <i class="ion ion-logo-facebook text-facebook text-big align-middle"></i>
+                        <i class="fab fa-vk" style="color: #5181B8"></i>
+                        <span class="d-lg-none align-middle">&nbsp; VK</span>
+                    </a>
+                    <a class="nav-item nav-link mr-lg-4" href="#">
+                        <i class="fab fa-telegram-plane" style="color: #64A9DC"></i>
+                        <span class="d-lg-none align-middle">&nbsp; Telegram </span>
+                    </a>
+                    <a class="nav-item nav-link mr-lg-4" href="#">
+                        <i class="fab fa-instagram" style="color: #212121"></i>
+                        <span class="d-lg-none align-middle">&nbsp; Instagram</span>
+                    </a>
+                    <a class="nav-item nav-link mr-lg-4" href="#">
+                        <i class="fab fa-facebook-square" style="color: #5181B8"></i>
                         <span class="d-lg-none align-middle">&nbsp; Facebook</span>
                     </a>
 
@@ -94,7 +116,7 @@
     <!-- / Navbar -->
 
     <!-- Slider -->
-    <div id="portfolio-slider" class="swiper-container">
+    <div id="portfolio-slider" class="swiper-container portfolio-slider">
         <div class="swiper-wrapper">
 
             <div class="swiper-slide">
@@ -102,7 +124,7 @@
                 <div class="slider-content align-items-end p-5">
                     <div class="font-secondary m-md-5 active">
                         <div class="portfolio-caption text-white font-weight-semibold">Такое жилье<br>повод для поездки </div>
-                        <a href="#" class="portfolio-link text-primary font-weight-bold mt-4">Анонс с несколькими предложениями.</a>
+                        <a href="#" class="text-primary font-weight-bold mt-4">Анонс с несколькими предложениями.</a>
                     </div>
                 </div>
             </div>
@@ -148,6 +170,7 @@
             </div>
 
         </div>
+        <div class="swiper-pagination"></div>
         <a href="#" class="portfolio-slider-nav swiper-button-prev custom-icon font-secondary text-tiny">
             <span class="d-inline-block bg-dark text-white p-2"><i class="ion ion-md-arrow-back scaleX--1-rtl"></i> <span class="d-none d-md-inline font-weight-semibold">PREV</span></span>
         </a>
@@ -173,7 +196,12 @@
                                     <div class="swiper-title display-1 font-weight-semibold mb-2">Выходные в Финляндии</div>
                                     <div class="swiper-text  display-4">Сегодня наш репортаж про выходные в Финляндии,
                                         которые можно провести просто поехав из Питера
-                                        на машине, поезде или автобусе.
+                                        на машине, поезде или автобусе.<br>
+                                        <small class="">
+                                            <i class="far fa-eye"></i> 562
+                                            &nbsp; &nbsp; &nbsp;
+                                            <a href="#" class="text-white"><i class="far fa-comments"></i> 12</a>
+                                        </small>
                                     </div>
                                 </div>
                             </div>
@@ -186,7 +214,12 @@
                                     <div class="swiper-title display-1 font-weight-semibold mb-2">Выходные в Финляндии</div>
                                     <div class="swiper-text  display-4">Сегодня наш репортаж про выходные в Финляндии,
                                         которые можно провести просто поехав из Питера
-                                        на машине, поезде или автобусе.
+                                        на машине, поезде или автобусе.<br>
+                                        <small class="">
+                                            <i class="far fa-eye"></i> 562
+                                            &nbsp; &nbsp; &nbsp;
+                                            <a href="#" class="text-white"><i class="far fa-comments"></i> 12</a>
+                                        </small>
                                     </div>
                                 </div>
                             </div>
@@ -199,7 +232,12 @@
                                     <div class="swiper-title display-1 font-weight-semibold mb-2">Выходные в Финляндии</div>
                                     <div class="swiper-text  display-4">Сегодня наш репортаж про выходные в Финляндии,
                                         которые можно провести просто поехав из Питера
-                                        на машине, поезде или автобусе.
+                                        на машине, поезде или автобусе.<br>
+                                        <small class="">
+                                            <i class="far fa-eye"></i> 562
+                                            &nbsp; &nbsp; &nbsp;
+                                            <a href="#" class="text-white"><i class="far fa-comments"></i> 12</a>
+                                        </small>
                                     </div>
                                 </div>
                             </div>
@@ -209,7 +247,7 @@
 
                 </div>
 
-                <div class="swiper-pagination"></div>
+                <div class="swiper-pagination1"></div>
             </div>
         </div>
 
@@ -234,9 +272,9 @@
                         <div class="media mt-4">
                             <div class="media-body">
                                 <small class="text-muted">
-                                    <span class="ion ion-ios-eye"></span> 562
+                                    <i class="far fa-eye"></i>  562
                                     &nbsp; &nbsp; &nbsp;
-                                    <a href="#" class="text-muted"><span class="ion ion-ios-text"></span> 12</a>
+                                    <a href="#" class="text-muted"><i class="far fa-comments"></i></span> 12</a>
                                 </small>
                                 <div class="small opacity-75">Июль 21, 2017</div>
                             </div>
@@ -257,9 +295,9 @@
                         <div class="media mt-4">
                             <div class="media-body">
                                 <small class="text-muted">
-                                    <span class="ion ion-ios-eye"></span> 562
+                                    <i class="far fa-eye"></i> 562
                                     &nbsp; &nbsp; &nbsp;
-                                    <a href="#" class="text-muted"><span class="ion ion-ios-text"></span> 12</a>
+                                    <a href="#" class="text-muted"><i class="far fa-comments"></i> 12</a>
                                 </small>
                                 <div class="small opacity-75">Июль 21, 2017</div>
                             </div>
@@ -283,9 +321,9 @@
                         <div class="media mt-4">
                             <div class="media-body">
                                 <small class="text-muted">
-                                    <span class="ion ion-ios-eye"></span> 562
+                                    <i class="far fa-eye"></i> 562
                                     &nbsp; &nbsp; &nbsp;
-                                    <a href="#" class="text-muted"><span class="ion ion-ios-text"></span> 12</a>
+                                    <a href="#" class="text-muted"><i class="far fa-comments"></i> 12</a>
                                 </small>
                                 <div class="small opacity-75">Июль 21, 2017</div>
                             </div>
@@ -303,7 +341,12 @@
                                     <div class="swiper-title display-1 font-weight-semibold mb-2">Выходные в Финляндии</div>
                                     <div class="swiper-text  display-4">Сегодня наш репортаж про выходные в Финляндии,
                                         которые можно провести просто поехав из Питера
-                                        на машине, поезде или автобусе.
+                                        на машине, поезде или автобусе.<br>
+                                        <small class="">
+                                            <i class="far fa-eye"></i> 562
+                                            &nbsp; &nbsp; &nbsp;
+                                            <a href="#" class="text-white"><i class="far fa-comments"></i> 12</a>
+                                        </small>
                                     </div>
                                 </div>
                             </div>
@@ -317,7 +360,12 @@
                                     <div class="swiper-title display-1 font-weight-semibold mb-2">Выходные в Финляндии</div>
                                     <div class="swiper-text  display-4">Сегодня наш репортаж про выходные в Финляндии,
                                         которые можно провести просто поехав из Питера
-                                        на машине, поезде или автобусе.
+                                        на машине, поезде или автобусе.<br>
+                                        <small class="">
+                                            <i class="far fa-eye"></i> 562
+                                            &nbsp; &nbsp; &nbsp;
+                                            <a href="#" class="text-white"><i class="far fa-comments"></i> 12</a>
+                                        </small>
                                     </div>
                                 </div>
                             </div>
@@ -331,7 +379,12 @@
                                     <div class="swiper-title display-1 font-weight-semibold mb-2">Выходные в Финляндии</div>
                                     <div class="swiper-text  display-4">Сегодня наш репортаж про выходные в Финляндии,
                                         которые можно провести просто поехав из Питера
-                                        на машине, поезде или автобусе.
+                                        на машине, поезде или автобусе.<br>
+                                        <small class="">
+                                            <i class="far fa-eye"></i> 562
+                                            &nbsp; &nbsp; &nbsp;
+                                            <a href="#" class="text-white"><i class="far fa-comments"></i> 12</a>
+                                        </small>
                                     </div>
                                 </div>
                             </div>
@@ -340,7 +393,7 @@
                     </div>
                 </div>
                 <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
+                <div class="swiper-pagination2"></div>
             </div>
         </div>
 
@@ -423,7 +476,7 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-container direction-swiper">
+            <div class="direction-swiper">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
@@ -533,6 +586,7 @@
             </div>
 
 
+
             <p class="all_homes"><a href="#">Показать всё жилье Airbnb Luxe &raquo;</a></p>
             <br>
             <div class="want_home">
@@ -552,11 +606,12 @@
 
     <script src="{% static 'assets/vendor/libs/popper/popper.js' %}"></script>
     <script src="{% static 'assets/vendor/js/bootstrap.js' %}"></script>
+    <script src="{% static 'assets/vendor/js/dropdown-hover.js' %}"></script>
 
     <!-- Libs -->
     <script src="{% static 'assets/vendor/libs/swiper/swiper.js' %}"></script>
     <script src="{% static 'assets/vendor/libs/masonry/masonry.js' %}"></script>
-
+    <script src="{% static 'assets/vendor/js/ui_dropdowns.js' %}"></script>
     <!-- Page -->
     <script src="{% static 'assets/js/portfolio.js' %}"></script>
     <script src="{% static 'assets/js/shop.js' %}"></script>
@@ -570,20 +625,20 @@
             spaceBetween: 30,
 
             pagination: {
-                el: '.swiper-pagination',
+                el: '.swiper-pagination2',
                 clickable: true,
             },
         });
     </script>
     <script type="text/javascript">
         var mySwiper = new Swiper('.direction-swiper', {
-              freeMode: true,
-
-              pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-              },
+            freeMode: true,
         });
+    </script>
+
+    <script type="text/javascript">
+        var portfolio_swiper = document.querySelector('.portfolio-slider').swiper
+
     </script>
 </body>
 

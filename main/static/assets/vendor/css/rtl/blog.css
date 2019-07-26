@@ -1,16 +1,23 @@
 body{
     font-family: 'Roboto', sans-serif !important;
+    width: 100% !important;
 }
 
 body:not(.loaded) {
     overflow: auto;
+    overflow-x: hidden;
 }
-
 
 li{
     list-style-type: none;
 }
 
+.container{
+    width: 80% !important;
+    padding: 0 !important;
+    margin: auto !important;
+    max-width: none;
+}
 .navbar{
     padding: 0 !important;
     margin: 0 !important;
@@ -55,7 +62,7 @@ li{
 }
 .swiper-text{
     color: #fff;
-    font-weight: lighter;
+    font-weight: 300;
     font-size: 22px;
     width: 70%;
     margin: auto;
@@ -77,18 +84,22 @@ li{
     text-align: center;
 }
 
-.unussial p{
-    margin: auto;
-    margin-bottom: 50px;
-    width: 50%;
-    text-align: center;
-    color: #000;
-}
-
-.unussial .card{
+.unussial .posts{
+    display: flex;
     width: 80%;
     margin: auto;
 }
+
+.unussial .posts .card{
+    border: 0;
+}
+.unussial .card .card-body{
+    padding: 0;
+}
+.unussial .center-card{
+    margin: 0 32px;
+}
+
 
 .card-title{
     text-transform: uppercase;
@@ -215,6 +226,15 @@ li{
         text-align: left;
         width: 80%;
     }
+
+    .unussial .posts{
+        flex-direction: column;
+    }
+
+    .unussial .center-card{
+        margin: 0;
+    }
+
     .unussial .swiper-container{
         width: 100%;
     }

@@ -123,6 +123,11 @@ li{
     color: #757575 !important;
     font-weight: lighter;
 }
+
+.site-sections .direction-swiper{
+    display: none !important;
+}
+
 .another-directions{
     width: 80%;
     margin: auto;
@@ -184,9 +189,14 @@ li{
         width: 100%;
     }
 
-    .site-sections:not(:first-child){
-
+    .site-sections .sections{
+        display: none !important;
     }
+    
+    .site-sections .direction-swiper{
+        display: block !important;
+    }
+
     .another-directions .continents{
         flex-direction: column;
     }

@@ -128,6 +128,10 @@ li{
     display: none !important;
 }
 
+.swiper-img{
+    width: 90% !important;
+}
+
 .another-directions{
     width: 80%;
     margin: auto;
@@ -167,7 +171,7 @@ li{
 }
 
 
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
     .about h2{
         font-size: 22px;
         width: 80%;

@@ -167,7 +167,7 @@ li{
 }
 
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
     .about h2{
         font-size: 22px;
         width: 80%;
@@ -192,7 +192,7 @@ li{
     .site-sections .sections{
         display: none !important;
     }
-    
+
     .site-sections .direction-swiper{
         display: block !important;
     }

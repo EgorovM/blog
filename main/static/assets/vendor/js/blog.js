@@ -24,12 +24,3 @@ var swiper = new Swiper('.sw-cn', {
     el: '.swiper-pagination',
   },
 });
-
-var mySwiper = new Swiper('.direction-swiper', {
-      freeMode: true,
-
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-});

@@ -1,6 +1,5 @@
 if($(window).width() < 992){
     $(".navbar").addClass("bg-white");
-    console.log("asd")
 }
 
 
@@ -13,7 +12,7 @@ $(function () {
   });
 });
 
-var swiper = new Swiper('.swiper-container', {
+var swiper = new Swiper('.sw-cn', {
 
   loop: true,
   autoplay: {
@@ -21,6 +20,6 @@ var swiper = new Swiper('.swiper-container', {
         disableOnInteraction: false,
       },
   pagination: {
-    el: '.swiper-pagination',
+    el: '.swiper-pagination1',
   },
 });

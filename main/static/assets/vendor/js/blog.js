@@ -1,6 +1,5 @@
 if($(window).width() < 992){
     $(".navbar").addClass("bg-white");
-    console.log("asd")
 }
 
 
@@ -21,6 +20,6 @@ var swiper = new Swiper('.sw-cn', {
         disableOnInteraction: false,
       },
   pagination: {
-    el: '.swiper-pagination',
+    el: '.swiper-pagination1',
   },
 });

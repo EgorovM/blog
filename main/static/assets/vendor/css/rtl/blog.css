@@ -229,8 +229,8 @@ li{
         flex-direction: column;
     }
 
-    .unussial .center-card{
-        margin: 0;
+    .unussial .posts .card{
+        width: 100%;
     }
 
     .unussial .swiper-container{

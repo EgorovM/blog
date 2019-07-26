@@ -86,20 +86,18 @@ li{
 
 .unussial .posts{
     display: flex;
+    justify-content: space-between;
     width: 80%;
     margin: auto;
 }
 
 .unussial .posts .card{
     border: 0;
+    width: 25%;
 }
 .unussial .card .card-body{
     padding: 0;
 }
-.unussial .center-card{
-    margin: 0 32px;
-}
-
 
 .card-title{
     text-transform: uppercase;

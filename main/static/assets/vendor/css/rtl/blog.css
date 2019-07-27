@@ -34,6 +34,11 @@ li{
 .navbar.scrolled a{
     color: #000;
 }
+.navbar-toggler-trigram{
+    font-size: 14px;
+    color: #a3a4a6;
+    font-weight: unset;
+}
 .dropdown-menu a{
     color: #000 !important;
 }
@@ -200,6 +205,12 @@ li{
     color: #c639ff;
 }
 
+
+@media (min-width: 991px){
+    .navbar{
+        background-color: transparent !important;
+    }
+}
 
 @media (max-width: 991px) {
     .navbar{

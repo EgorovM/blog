@@ -235,6 +235,12 @@ li{
         width: 100%;
     }
 
+    .swiper-title{
+        width: 100%;
+    }
+    .swiper-text{
+        width: 100%;
+    }
     .unussial h2{
         text-align: left;
         width: 80%;

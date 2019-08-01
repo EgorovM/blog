@@ -53,66 +53,68 @@
 
 
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-            <a href="#" class="navbar-brand text-large font-weight-bolder line-height-1 py-3"><img src="media/logo.png" style="height: 60px;"></img></a>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a href="#" class="navbar-brand text-large font-weight-bolder line-height-1 py-3"><img src="media/logo.png" style="height: 60px;"></img></a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header-16">
-                <span class="navbar-toggler-trigram">&#9776;</span>
-            </button>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header-16">
+                    <span class="navbar-toggler-trigram">&#9776;</span>
+                </button>
 
-            <div class="navbar-collapse collapse" id="header-16">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="#">Главная</a>
-                    <div class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" data-trigger="hover">Разделы</a>
-                        <div class=" dropdown-menu">
-                            <a class="dropdown-item" href="#">Ссылка</a>
-                            <a class="dropdown-item" href="javascript:void(0)">Ссылка</a>
-                            <a class="dropdown-item" href="javascript:void(0)">Ссылка</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="javascript:void(0)">Ссылка</a>
+                <div class="navbar-collapse collapse" id="header-16">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link active" href="#">Главная</a>
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" data-trigger="hover">Разделы</a>
+                            <div class=" dropdown-menu">
+                                <a class="dropdown-item" href="#">Ссылка</a>
+                                <a class="dropdown-item" href="javascript:void(0)">Ссылка</a>
+                                <a class="dropdown-item" href="javascript:void(0)">Ссылка</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="javascript:void(0)">Ссылка</a>
+                            </div>
                         </div>
+                        <a class="nav-item nav-link" href="#">О нас</a>
+                        <a class="nav-item nav-link" href="#">Контакты</a>
                     </div>
-                    <a class="nav-item nav-link" href="#">О нас</a>
-                    <a class="nav-item nav-link" href="#">Контакты</a>
+
+                    <div class="navbar-nav align-items-lg-center ml-auto">
+                        <a class="nav-item nav-link mr-lg-4" href="#">
+                            <i class="fab fa-youtube" style="color: #FF0000"></i>
+                            <span class="d-lg-none align-middle">&nbsp; YouTube </span>
+                        </a>
+                        <a class="nav-item nav-link mr-lg-4" href="#">
+                            <i class="fab fa-vk" style="color: #5181B8"></i>
+                            <span class="d-lg-none align-middle">&nbsp; VK</span>
+                        </a>
+                        <a class="nav-item nav-link mr-lg-4" href="#">
+                            <i class="fab fa-telegram-plane" style="color: #64A9DC"></i>
+                            <span class="d-lg-none align-middle">&nbsp; Telegram </span>
+                        </a>
+                        <a class="nav-item nav-link mr-lg-4" href="#">
+                            <i class="fab fa-instagram" style="color: #212121"></i>
+                            <span class="d-lg-none align-middle">&nbsp; Instagram</span>
+                        </a>
+                        <a class="nav-item nav-link mr-lg-4" href="#">
+                            <i class="fab fa-facebook-square" style="color: #5181B8"></i>
+                            <span class="d-lg-none align-middle">&nbsp; Facebook</span>
+                        </a>
+
+                        <!-- Search -->
+                        <label class="nav-item nav-link navbar-search-box">
+                            <i class="ion ion-ios-search navbar-icon align-middle"></i>
+                            <span class="navbar-search-input">
+                                <input type="text" class="form-control mx-2" placeholder="Search..." style="width:140px">
+                                <a href="#" class="navbar-search-cancel">×</a>
+                            </span>
+                        </label>
+                    </div>
                 </div>
 
-                <div class="navbar-nav align-items-lg-center ml-auto">
-                    <a class="nav-item nav-link mr-lg-4" href="#">
-                        <i class="fab fa-youtube" style="color: #FF0000"></i>
-                        <span class="d-lg-none align-middle">&nbsp; YouTube </span>
-                    </a>
-                    <a class="nav-item nav-link mr-lg-4" href="#">
-                        <i class="fab fa-vk" style="color: #5181B8"></i>
-                        <span class="d-lg-none align-middle">&nbsp; VK</span>
-                    </a>
-                    <a class="nav-item nav-link mr-lg-4" href="#">
-                        <i class="fab fa-telegram-plane" style="color: #64A9DC"></i>
-                        <span class="d-lg-none align-middle">&nbsp; Telegram </span>
-                    </a>
-                    <a class="nav-item nav-link mr-lg-4" href="#">
-                        <i class="fab fa-instagram" style="color: #212121"></i>
-                        <span class="d-lg-none align-middle">&nbsp; Instagram</span>
-                    </a>
-                    <a class="nav-item nav-link mr-lg-4" href="#">
-                        <i class="fab fa-facebook-square" style="color: #5181B8"></i>
-                        <span class="d-lg-none align-middle">&nbsp; Facebook</span>
-                    </a>
-
-                    <!-- Search -->
-                    <label class="nav-item nav-link navbar-search-box">
-                        <i class="ion ion-ios-search navbar-icon align-middle"></i>
-                        <span class="navbar-search-input">
-                            <input type="text" class="form-control mx-2" placeholder="Search..." style="width:140px">
-                            <a href="#" class="navbar-search-cancel">×</a>
-                        </span>
-                    </label>
-                </div>
             </div>
-
-        </div>
-    </nav>
+        </nav>
+    </header>
     <!-- / Navbar -->
 
     <!-- Slider -->
@@ -440,9 +442,8 @@
                     </div>
                 </div>
             </div>
-            <br>
             <div class="sections">
-                <div class="card mb-4">
+                <div class="card">
                     <div class="w-100">
                         <a href="#" class="d-block ui-rect ui-bg-cover rounded-top" style="background-image: url('https://a0.muscache.com/4ea/air/v2/pictures/f1df5aaf-0870-47d7-85dc-5d41454ef433.jpg?t=c:w800-h450,r:w800-h450-sfit,e:fjpg-c75');"></a>
                     </div>
@@ -454,7 +455,7 @@
                         </h4>
                     </div>
                 </div>
-                <div class="card mb-4">
+                <div class="card">
                     <div class="w-100">
                         <a href="#" class="d-block ui-rect ui-bg-cover rounded-top" style="background-image: url('https://a0.muscache.com/4ea/air/v2/pictures/88b48bc6-38bc-4612-87cd-cb131ec0e2c8.jpg?t=c:w800-h450,r:w800-h450-sfit,e:fjpg-c75');"></a>
                     </div>
@@ -466,7 +467,7 @@
                         </h4>
                     </div>
                 </div>
-                <div class="card mb-4">
+                <div class="card">
                     <div class="w-100">
                         <a href="#" class="d-block ui-rect ui-bg-cover rounded-top" style="background-image: url('https://a0.muscache.com/4ea/air/v2/pictures/8062af46-68e7-4ce1-b786-33c83a3cb4d6.jpg?t=c:w800-h450,r:w800-h450-sfit,e:fjpg-c75');"></a>
                     </div>
@@ -513,158 +514,6 @@
                 </div>
             </div>
         </div>
-
-        <div class="another-directions">
-            <h2> Другие направления </h2>
-            <br>
-            <div class="continents">
-                <div class="continent">
-                    <p>Азия и Океания</p>
-                    <ul>
-                        <li>Бали</li>
-                        <li>Остров Самуи</li>
-                        <li>Панг-Нга</li>
-                        <li>Пхукет</li>
-                        <li>Новая Зеландия</li>
-                        <li>Сидней</li>
-                    </ul>
-                </div>
-
-                <div class="continent">
-                    <p>Африка</p>
-                    <ul>
-                        <li>Кейптаун</li>
-                        <li>Марракеш</li>
-
-                    </ul>
-                </div>
-
-                <div class="continent">
-                    <p>Еврова</p>
-                    <ul>
-                        <li>Лондон</li>
-                        <li>Апулия</li>
-                        <li>Сицилия</li>
-                        <li>Swiss Apls</li>
-                        <li>Тоскана</li>
-
-                    </ul>
-                </div>
-                <div class="continent">
-                    <p>Карибские острова</p>
-                    <ul>
-                        <li>Ангилия</li>
-                        <li>Антигуа и Барбурда</li>
-                        <li>Бардабос</li>
-                        <li>Bonaire</li>
-                        <li>Каймановы о-ва</li>
-                        <li>Доминиканская Республика</li>
-                        <li>Ямайка</li>
-                        <li>Saint Barthelemy</li>
-                        <li>О-ва Тёркс и Кайкос</li>
-                    </ul>
-                </div>
-                <div class="continent">
-                    <p>Латинская Америка</p>
-                    <ul>
-                        <li>Коста-Рика</li>
-                        <li>Кабо-Сан-Лукас</li>
-                        <li>Пуэрто-Вальярта</li>
-                        <li>Punta Mita</li>
-                        <li>Riviera Maya</li>
-                        <li>Нуэво-Вальярта </li>
-                    </ul>
-                </div>
-                <div class="continent">
-                    <p>США</p>
-                    <ul>
-                        <li>Остров Гавайи</li>
-                        <li>Лос-Анджелес</li>
-                        <li>Палм-Спрингс</li>
-                        <li>Парк-Сити</li>
-                        <li>Юта</li>
-                        <li>Вайл</li>
-                    </ul>
-                </div>
-            </div>
-
-
-
-            <p class="all_homes"><a href="#">Показать всё жилье Airbnb Luxe &raquo;</a></p>
-            <br>
-            <div class="want_home">
-
-                <h3>Хотите жилье на Airbnb Luxe? <span class="go">Подать заявку</span></h3>
-
-            </div>
-        </div>
-
     </main>
 
-    <!-- Core scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-    <!-- Add this code as early as you can -->
-
-
-    <script src="{% static 'assets/vendor/libs/popper/popper.js' %}"></script>
-    <script src="{% static 'assets/vendor/js/bootstrap.js' %}"></script>
-    <script src="{% static 'assets/vendor/js/dropdown-hover.js' %}"></script>
-
-    <!-- Libs -->
-    <script src="{% static 'assets/vendor/libs/swiper/swiper.js' %}"></script>
-    <script src="{% static 'assets/vendor/libs/masonry/masonry.js' %}"></script>
-    <script src="{% static 'assets/vendor/js/ui_dropdowns.js' %}"></script>
-    <!-- Page -->
-    <script src="{% static 'assets/js/portfolio.js' %}"></script>
-    <script src="{% static 'assets/js/shop.js' %}"></script>
-    <script src="{% static 'assets/vendor/js/blog.js' %}"></script>
-
-
-    <script type="text/javascript">
-        var port_swip = new Swiper('.portfolio-swiper', {
-
-            pagination: {
-              el: '.port_swiper',
-              clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-              },
-        });
-    </script>
-
-    <script type="text/javascript">
-        var swiper = new Swiper('.sw-cn', {
-
-          loop: true,
-          autoplay: {
-                delay: 5000,
-                disableOnInteraction: false,
-              },
-
-          pagination: {
-            el: '.swiper-pagination1',
-          },
-        });
-    </script>
-    <script type="text/javascript">
-        var mySwiperr = new Swiper('.travel-swiper', {
-            slidesPerView: 1,
-            spaceBetween: 30,
-
-            pagination: {
-                el: '.swiper-pagination2',
-                clickable: true,
-            },
-        });
-    </script>
-    <script type="text/javascript">
-        var mySwiper = new Swiper('.direction-swiper', {
-            freeMode: true,
-        });
-    </script>
-</body>
-
-</html>
+    {% include 'main/footer.html' %}

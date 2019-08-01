@@ -1,0 +1,90 @@
+{% load staticfiles %}
+    <footer>
+
+        <nav class="footer bg-white py-2">
+          <div class="container text-center py-4">
+            <div class="pb-3">
+              <a href="#" class="footer-text text-large font-weight-bolder">Brand</a> <span class="align-top">©</span>
+            </div>
+            <hr class="my-1">
+            <div class="pb-3">
+              <a href="#" class="footer-link pt-3">About Us</a>
+              <a href="#" class="footer-link pt-3 ml-4">Help</a>
+              <a href="#" class="footer-link pt-3 ml-4">Contact</a>
+              <a href="#" class="footer-link pt-3 ml-4">Terms &amp; Conditions</a>
+            </div>
+
+            <div class="col-md-9 col-lg-7 col-xl-6 px-0 mx-auto mt-3">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              vulputate commodo justo, a malesuada magna interdum sodales.
+              Vestibulum bibendum fermentum tortor, eu blandit orci porta quis.
+            </div>
+          </div>
+        </nav>
+    </footer>
+    <!-- Core scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Add this code as early as you can -->
+
+
+    <script src="{% static 'assets/vendor/libs/popper/popper.js' %}"></script>
+    <script src="{% static 'assets/vendor/js/bootstrap.js' %}"></script>
+    <script src="{% static 'assets/vendor/js/dropdown-hover.js' %}"></script>
+
+    <!-- Libs -->
+    <script src="{% static 'assets/vendor/libs/swiper/swiper.js' %}"></script>
+    <script src="{% static 'assets/vendor/libs/masonry/masonry.js' %}"></script>
+    <script src="{% static 'assets/vendor/js/ui_dropdowns.js' %}"></script>
+    <!-- Page -->
+    <script src="{% static 'assets/js/portfolio.js' %}"></script>
+    <script src="{% static 'assets/js/shop.js' %}"></script>
+    <script src="{% static 'assets/vendor/js/blog.js' %}"></script>
+
+
+    <script type="text/javascript">
+        var port_swip = new Swiper('.portfolio-swiper', {
+
+            pagination: {
+              el: '.port_swiper',
+              clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+        });
+    </script>
+
+    <script type="text/javascript">
+        var swiper = new Swiper('.sw-cn', {
+
+          loop: true,
+          autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+              },
+
+          pagination: {
+            el: '.swiper-pagination1',
+          },
+        });
+    </script>
+    <script type="text/javascript">
+        var mySwiperr = new Swiper('.travel-swiper', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+
+            pagination: {
+                el: '.swiper-pagination2',
+                clickable: true,
+            },
+        });
+    </script>
+    <script type="text/javascript">
+        var mySwiper = new Swiper('.direction-swiper', {
+            freeMode: true,
+        });
+    </script>
+</body>
+</html>

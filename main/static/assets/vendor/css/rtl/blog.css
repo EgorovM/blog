@@ -139,14 +139,15 @@ li{
 
 .site-sections .sections{
     display: flex;
-    justify-content: space-between;
-    width: 80%;
+    flex-direction: column;
+    width: 100%;
     margin: auto;
 }
 
 .site-sections .sections .card{
-    margin-left: 20px;
-    width: 33%;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
 }
 .site-sections .sections .card .card-body h4 a .info{
     font-size: 14px;
@@ -158,53 +159,20 @@ li{
     font-weight: lighter;
 }
 
+.site-sections .sections{
+    visibility: visible;
+    position: static;
+}
+
 .site-sections .direction-swiper{
     visibility: hidden;
     position: absolute;
+    top: 0;
 }
 
 .swiper-img{
     width: 90% !important;
 }
-
-.another-directions{
-    width: 80%;
-    margin: auto;
-    margin-top: 150px;
-}
-
-.another-directions h2{
-    text-align: center;
-}
-
-.another-directions .continents{
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-}
-
-.another-directions .continents .continent p{
-    font-weight: bold;
-}
-
-.another-directions .continents ul{
-    margin-block-start: 0;
-    padding-inline-start: 0;
-}
-.another-directions .continents li{
-    margin-top: 15px;
-}
-.another-directions h3{
-    text-align: center;
-    padding: 50px 0;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
-}
-
-.another-directions h3 span{
-    color: #c639ff;
-}
-
 
 @media (min-width: 991px){
     .navbar{
@@ -271,9 +239,4 @@ li{
         visibility: visible;
         position: static;
     }
-
-    .another-directions .continents{
-        flex-direction: column;
-    }
-
 }

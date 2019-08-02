@@ -114,12 +114,16 @@ li{
 
 .card-title{
     text-transform: uppercase;
-    font-weight: 600;
-    color: #757575 !important;
+    font-size: 22px;
+    font-weight: 800;
+    color: #212121 !important;
 }
 
 .card-text{
+    margin-top: 30px;
     color: #212121 !important;
+    font-size: 20px !important;
+    font-weight: 300;
 }
 .unussial .swiper-container{
     margin-top: 150px;

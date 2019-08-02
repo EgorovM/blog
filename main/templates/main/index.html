@@ -1,122 +1,5 @@
-{% load staticfiles %}
-<!DOCTYPE html>
 
-<html lang="en" class="default-style">
-
-<head>
-    <title>Russe - Space</title>
-
-    <meta charset="utf-8">
-    <meta http-equiv="cache-control" content="no-cache">
-    <meta http-equiv="expires" content="0">
-    <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <!-- Icon fonts -->
-    <link rel="stylesheet" href="{% static 'assets/vendor/fonts/ionicons.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/vendor/fonts/linearicons.css' %}">
-
-    <!-- Core stylesheets -->
-    <link rel="stylesheet" href="{% static 'assets/vendor/css/rtl/bootstrap.css' %}" class="theme-settings-bootstrap-css">
-    <link rel="stylesheet" href="{% static 'assets/vendor/css/rtl/appwork.css' %}" class="theme-settings-appwork-css">
-    <link rel="stylesheet" href="{% static 'assets/vendor/css/rtl/theme-corporate.css' %}" class="theme-settings-theme-css">
-    <link rel="stylesheet" href="{% static 'assets/vendor/css/rtl/colors.css' %}" class="theme-settings-colors-css">
-    <link rel="stylesheet" href="{% static 'assets/vendor/css/rtl/uikit.css' %}">
-
-    <script src="{% static 'assets/vendor/js/material-ripple.js' %}"></script>
-    <script src="{% static 'assets/vendor/js/layout-helpers.js' %}"></script>
-
-    <!-- Theme settings -->
-    <!-- This file MUST be included after core stylesheets and layout-helpers.js in the <head> section -->
-    <script src="{% static 'assets/vendor/js/theme-settings.js' %}"></script>
-    <script>
-        window.themeSettings = new ThemeSettings({
-            cssPath: '/static/assets/vendor/css/rtl/',
-            themesPath: '/static/assets/vendor/css/rtl/'
-        });
-    </script>
-
-    <!-- Core scripts -->
-    <!-- Page -->
-    <link rel="stylesheet" href="{% static 'assets/css/portfolio.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/css/landing.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/css/shop.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/vendor/css/rtl/blog.css' %}">
-
-    <!-- Libs -->
-    <link rel="stylesheet" href="{% static 'assets/vendor/libs/swiper/swiper.css' %}">
-    <script src="https://kit.fontawesome.com/ba974a8480.js"></script>
-</head>
-
-
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg fixed-top">
-            <div class="container">
-                <a href="#" class="navbar-brand text-large font-weight-bolder line-height-1 py-3"><img src="media/logo.png" style="height: 60px;"></img></a>
-
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header-16">
-                    <span class="navbar-toggler-trigram">&#9776;</span>
-                </button>
-
-                <div class="navbar-collapse collapse" id="header-16">
-                    <div class="navbar-nav">
-                        <a class="nav-item nav-link active" href="#">Главная</a>
-                        <div class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" data-trigger="hover">Разделы</a>
-                            <div class=" dropdown-menu">
-                                <a class="dropdown-item" href="#">Ссылка</a>
-                                <a class="dropdown-item" href="javascript:void(0)">Ссылка</a>
-                                <a class="dropdown-item" href="javascript:void(0)">Ссылка</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="javascript:void(0)">Ссылка</a>
-                            </div>
-                        </div>
-                        <a class="nav-item nav-link" href="#">О нас</a>
-                        <a class="nav-item nav-link" href="#">Контакты</a>
-                    </div>
-
-                    <div class="navbar-nav align-items-lg-center ml-auto">
-                        <a class="nav-item nav-link mr-lg-4" href="#">
-                            <i class="fab fa-youtube" style="color: #FF0000"></i>
-                            <span class="d-lg-none align-middle">&nbsp; YouTube </span>
-                        </a>
-                        <a class="nav-item nav-link mr-lg-4" href="#">
-                            <i class="fab fa-vk" style="color: #5181B8"></i>
-                            <span class="d-lg-none align-middle">&nbsp; VK</span>
-                        </a>
-                        <a class="nav-item nav-link mr-lg-4" href="#">
-                            <i class="fab fa-telegram-plane" style="color: #64A9DC"></i>
-                            <span class="d-lg-none align-middle">&nbsp; Telegram </span>
-                        </a>
-                        <a class="nav-item nav-link mr-lg-4" href="#">
-                            <i class="fab fa-instagram" style="color: #212121"></i>
-                            <span class="d-lg-none align-middle">&nbsp; Instagram</span>
-                        </a>
-                        <a class="nav-item nav-link mr-lg-4" href="#">
-                            <i class="fab fa-facebook-square" style="color: #5181B8"></i>
-                            <span class="d-lg-none align-middle">&nbsp; Facebook</span>
-                        </a>
-
-                        <!-- Search -->
-                        <label class="nav-item nav-link navbar-search-box">
-                            <i class="ion ion-ios-search navbar-icon align-middle"></i>
-                            <span class="navbar-search-input">
-                                <input type="text" class="form-control mx-2" placeholder="Search..." style="width:140px">
-                                <a href="#" class="navbar-search-cancel">×</a>
-                            </span>
-                        </label>
-                    </div>
-                </div>
-
-            </div>
-        </nav>
-    </header>
-    <!-- / Navbar -->
-
+    {% include 'main/header.html' %}
     <!-- Slider -->
     <div id="portfolio-slider" class="swiper-container portfolio-swiper">
         <div class="swiper-wrapper">
@@ -189,7 +72,7 @@
             <h2>Airbnb Luxe предлагает искусно спроектированное жилье в
                 идеальном состоянии — с роскошными удобствами, услугами
                 и личным менеджером поездки.</h2>
-            <div class="swiper-container sw-cn" id="shop-hero-slider">
+            <div class="swiper-container sw-cn">
                 <div class="swiper-wrapper">
                     <!-- Animate first slide on page load -->
                     <div class="swiper-slide shop-hero-slider-animating ui-bg-cover" style="background-image: url(/media/about__img.jpg)">
@@ -407,11 +290,11 @@
             <div class="sections">
                 <div class="card">
                     <div class="w-100">
-                        <a href="#" class="d-block ui-rect ui-bg-cover rounded-top" style="background-image: url('https://a0.muscache.com/4ea/air/v2/pictures/a7fe1266-b67d-4beb-b675-a1f6b669f374.jpg?t=c:w800-h450,r:w800-h450-sfit,e:fjpg-c75');"></a>
+                        <a href="/section" class="d-block ui-rect ui-bg-cover rounded-top" style="background-image: url('https://a0.muscache.com/4ea/air/v2/pictures/a7fe1266-b67d-4beb-b675-a1f6b669f374.jpg?t=c:w800-h450,r:w800-h450-sfit,e:fjpg-c75');"></a>
                     </div>
                     <div class="card-body">
                         <h4 class="m-0">
-                            <a href="#" class="text-dark"><span class="info">Репортажей: 20</span><br>
+                            <a href="/section" class="text-dark"><span class="info">Репортажей: 20</span><br>
                                 <span class="text">Punta Mita </span>
                             </a>
                         </h4>
@@ -419,11 +302,11 @@
                 </div>
                 <div class="card">
                     <div class="w-100">
-                        <a href="#" class="d-block ui-rect ui-bg-cover rounded-top" style="background-image: url('https://a0.muscache.com/4ea/air/v2/pictures/daade126-d332-495c-9fcd-fb26e234da23.jpg?t=c:w800-h450,r:w800-h450-sfit,e:fjpg-c75');"></a>
+                        <a href="/section" class="d-block ui-rect ui-bg-cover rounded-top" style="background-image: url('https://a0.muscache.com/4ea/air/v2/pictures/daade126-d332-495c-9fcd-fb26e234da23.jpg?t=c:w800-h450,r:w800-h450-sfit,e:fjpg-c75');"></a>
                     </div>
                     <div class="card-body">
                         <h4 class="m-0">
-                            <a href="#" class="text-dark"><span class="info">Репортажей: 20</span><br>
+                            <a href="/section" class="text-dark"><span class="info">Репортажей: 20</span><br>
                                 <span class="text">Punta Mita </span>
                             </a>
                         </h4>
@@ -431,11 +314,11 @@
                 </div>
                 <div class="card">
                     <div class="w-100">
-                        <a href="#sect" class="d-block ui-rect ui-bg-cover rounded-top" style="background-image: url('https://a0.muscache.com/4ea/air/v2/pictures/e93f0981-98a5-4ab4-87da-fceaea7b64f2.jpg?t=c:w800-h450,r:w800-h450-sfit,e:fjpg-c75');"></a>
+                        <a href="/section" class="d-block ui-rect ui-bg-cover rounded-top" style="background-image: url('https://a0.muscache.com/4ea/air/v2/pictures/e93f0981-98a5-4ab4-87da-fceaea7b64f2.jpg?t=c:w800-h450,r:w800-h450-sfit,e:fjpg-c75');"></a>
                     </div>
                     <div class="card-body">
                         <h4 class="m-0">
-                            <a href="#" class="text-dark"><span class="info">Репортажей: 20</span><br>
+                            <a href="/section" class="text-dark"><span class="info">Репортажей: 20</span><br>
                                 <span class="text">Punta Mita </span>
                             </a>
                         </h4>
@@ -445,11 +328,11 @@
             <div class="sections">
                 <div class="card">
                     <div class="w-100">
-                        <a href="#" class="d-block ui-rect ui-bg-cover rounded-top" style="background-image: url('https://a0.muscache.com/4ea/air/v2/pictures/f1df5aaf-0870-47d7-85dc-5d41454ef433.jpg?t=c:w800-h450,r:w800-h450-sfit,e:fjpg-c75');"></a>
+                        <a href="/section" class="d-block ui-rect ui-bg-cover rounded-top" style="background-image: url('https://a0.muscache.com/4ea/air/v2/pictures/f1df5aaf-0870-47d7-85dc-5d41454ef433.jpg?t=c:w800-h450,r:w800-h450-sfit,e:fjpg-c75');"></a>
                     </div>
                     <div class="card-body m-lg-2">
                         <h4 class="m-0">
-                            <a href="#" class="text-dark"><span class="info">Репортажей: 20</span><br>
+                            <a href="/section" class="text-dark"><span class="info">Репортажей: 20</span><br>
                                 <span class="text">Punta Mita </span>
                             </a>
                         </h4>
@@ -457,11 +340,11 @@
                 </div>
                 <div class="card">
                     <div class="w-100">
-                        <a href="#" class="d-block ui-rect ui-bg-cover rounded-top" style="background-image: url('https://a0.muscache.com/4ea/air/v2/pictures/88b48bc6-38bc-4612-87cd-cb131ec0e2c8.jpg?t=c:w800-h450,r:w800-h450-sfit,e:fjpg-c75');"></a>
+                        <a href="/section" class="d-block ui-rect ui-bg-cover rounded-top" style="background-image: url('https://a0.muscache.com/4ea/air/v2/pictures/88b48bc6-38bc-4612-87cd-cb131ec0e2c8.jpg?t=c:w800-h450,r:w800-h450-sfit,e:fjpg-c75');"></a>
                     </div>
                     <div class="card-body m-lg-2">
                         <h4 class="m-0">
-                            <a href="#" class="text-dark"><span class="info">Репортажей: 20</span><br>
+                            <a href="/section" class="text-dark"><span class="info">Репортажей: 20</span><br>
                                 <span class="text">Punta Mita </span>
                             </a>
                         </h4>
@@ -469,18 +352,18 @@
                 </div>
                 <div class="card">
                     <div class="w-100">
-                        <a href="#" class="d-block ui-rect ui-bg-cover rounded-top" style="background-image: url('https://a0.muscache.com/4ea/air/v2/pictures/8062af46-68e7-4ce1-b786-33c83a3cb4d6.jpg?t=c:w800-h450,r:w800-h450-sfit,e:fjpg-c75');"></a>
+                        <a href="/section" class="d-block ui-rect ui-bg-cover rounded-top" style="background-image: url('https://a0.muscache.com/4ea/air/v2/pictures/8062af46-68e7-4ce1-b786-33c83a3cb4d6.jpg?t=c:w800-h450,r:w800-h450-sfit,e:fjpg-c75');"></a>
                     </div>
                     <div class="card-body m-lg-2">
                         <h4 class="m-0">
-                            <a href="#" class="text-dark"><span class="info">Репортажей: 20</span><br>
+                            <a href="/section" class="text-dark"><span class="info">Репортажей: 20</span><br>
                                 <span class="text">Punta Mita </span>
                             </a>
                         </h4>
                     </div>
                 </div>
             </div>
-            <div class="direction-swiper">
+            <div class="swiper-container direction-swiper">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
@@ -488,7 +371,7 @@
                         <img class="swiper-img" src="https://a0.muscache.com/4ea/air/v2/pictures/a7fe1266-b67d-4beb-b675-a1f6b669f374.jpg?t=c:w800-h450,r:w800-h450-sfit,e:fjpg-c75">
 
                         <h4>
-                            <a href="#" class="text-dark"><span class="info">Репортажей: 20</span><br>
+                            <a href="/section" class="text-dark"><span class="info">Репортажей: 20</span><br>
                                 <span class="text">Punta Mita </span>
                             </a>
                         </h4>
@@ -497,7 +380,7 @@
                         <img class="swiper-img" src="https://a0.muscache.com/4ea/air/v2/pictures/a7fe1266-b67d-4beb-b675-a1f6b669f374.jpg?t=c:w800-h450,r:w800-h450-sfit,e:fjpg-c75">
 
                         <h4>
-                            <a href="#" class="text-dark"><span class="info">Репортажей: 20</span><br>
+                            <a href="/section" class="text-dark"><span class="info">Репортажей: 20</span><br>
                                 <span class="text">Punta Mita </span>
                             </a>
                         </h4>
@@ -506,7 +389,7 @@
                         <img class="swiper-img" src="https://a0.muscache.com/4ea/air/v2/pictures/a7fe1266-b67d-4beb-b675-a1f6b669f374.jpg?t=c:w800-h450,r:w800-h450-sfit,e:fjpg-c75">
 
                         <h4>
-                            <a href="#" class="text-dark"><span class="info">Репортажей: 20</span><br>
+                            <a href="/section" class="text-dark"><span class="info">Репортажей: 20</span><br>
                                 <span class="text">Punta Mita </span>
                             </a>
                         </h4>
@@ -514,77 +397,6 @@
                 </div>
             </div>
         </div>
-
-        <div class="swiper-container section-swiper" id="shop-hero-slider">
-            <div class="swiper-wrapper">
-                <!-- Animate first slide on page load -->
-                <div class="swiper-slide shop-hero-slider-animating ui-bg-cover" style="background-image: url(/media/about__img.jpg)">
-                    <div class="container px-3">
-                        <div class="shop-hero-container">
-                            <div class="flex-shrink-1 text-center py-5">
-                                <div class="swiper-title display-1 font-weight-semibold mb-2">Выходные в Финляндии</div>
-                                <div class="swiper-text display-4">Сегодня наш репортаж про выходные в Финляндии,
-                                    которые можно провести просто поехав из Питера
-                                    на машине, поезде или автобусе.<br>
-
-                                    <div class="text-white slider-small small mb-3">
-                                        May 21, 2017
-                                        &nbsp; &nbsp;·&nbsp; &nbsp;
-                                        <i class="far fa-eye"></i>&nbsp;562
-                                        &nbsp; &nbsp;&nbsp;
-                                        <a href="#" class="text-white"><i class="far fa-comments"></i> 12</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide ui-bg-cover" style="background-image: url(/media/about__img.jpg)">
-                    <div class="container px-3">
-                        <div class="shop-hero-container">
-                            <div class="flex-shrink-1 text-center py-5">
-                                <div class="swiper-title display-1 font-weight-semibold mb-2">Выходные в Финляндии</div>
-                                <div class="swiper-text  display-4">Сегодня наш репортаж про выходные в Финляндии,
-                                    которые можно провести просто поехав из Питера
-                                    на машине, поезде или автобусе.<br>
-
-                                    <div class="text-white slider-small small mb-3">
-                                        May 21, 2017
-                                        &nbsp; &nbsp;·&nbsp; &nbsp;
-                                        <i class="far fa-eye"></i>&nbsp;562
-                                        &nbsp; &nbsp; &nbsp;
-                                        <a href="#" class="text-white"><i class="far fa-comments"></i> 12</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide ui-bg-cover" style="background-image: url(/media/about__img.jpg)">
-                    <div class="container px-3">
-                        <div class="shop-hero-container">
-                            <div class="flex-shrink-1 text-center py-5">
-                                <div class="swiper-title display-1 font-weight-semibold mb-2">Выходные в Финляндии</div>
-                                <div class="swiper-text  display-4">Сегодня наш репортаж про выходные в Финляндии,
-                                    которые можно провести просто поехав из Питера
-                                    на машине, поезде или автобусе.<br>
-                                    <div class="text-white slider-small small mb-3">
-                                        May 21, 2017
-                                        &nbsp; &nbsp;·&nbsp; &nbsp;
-                                        <i class="far fa-eye"></i>&nbsp;562
-                                        &nbsp; &nbsp; &nbsp;
-                                        <a href="#" class="text-white"><i class="far fa-comments"></i> 12</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="swiper-pagination swiper-pagination3"></div>
-        </div>
-        
     </main>
 
     {% include 'main/footer.html' %}

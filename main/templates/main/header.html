@@ -1,0 +1,118 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+
+<html lang="en" class="default-style">
+
+<head>
+    <title>Russe - Space</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Icon fonts -->
+    <link rel="stylesheet" href="{% static 'assets/vendor/fonts/ionicons.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/vendor/fonts/linearicons.css' %}">
+
+    <!-- Core stylesheets -->
+    <link rel="stylesheet" href="{% static 'assets/vendor/css/rtl/bootstrap.css' %}" class="theme-settings-bootstrap-css">
+    <link rel="stylesheet" href="{% static 'assets/vendor/css/rtl/appwork.css' %}" class="theme-settings-appwork-css">
+    <link rel="stylesheet" href="{% static 'assets/vendor/css/rtl/theme-corporate.css' %}" class="theme-settings-theme-css">
+    <link rel="stylesheet" href="{% static 'assets/vendor/css/rtl/colors.css' %}" class="theme-settings-colors-css">
+    <link rel="stylesheet" href="{% static 'assets/vendor/css/rtl/uikit.css' %}">
+
+    <script src="{% static 'assets/vendor/js/material-ripple.js' %}"></script>
+    <script src="{% static 'assets/vendor/js/layout-helpers.js' %}"></script>
+
+    <!-- Theme settings -->
+    <!-- This file MUST be included after core stylesheets and layout-helpers.js in the <head> section -->
+    <script src="{% static 'assets/vendor/js/theme-settings.js' %}"></script>
+    <script>
+        window.themeSettings = new ThemeSettings({
+            cssPath: '/static/assets/vendor/css/rtl/',
+            themesPath: '/static/assets/vendor/css/rtl/'
+        });
+    </script>
+
+    <!-- Core scripts -->
+    <!-- Page -->
+    <link rel="stylesheet" href="{% static 'assets/css/portfolio.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/landing.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/shop.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/vendor/css/rtl/blog.css' %}">
+
+    <!-- Libs -->
+    <link rel="stylesheet" href="{% static 'assets/vendor/libs/swiper/swiper.css' %}">
+    <script src="https://kit.fontawesome.com/ba974a8480.js"></script>
+</head>
+
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a href="#" class="navbar-brand text-large font-weight-bolder line-height-1 py-3"><img src="/media/logo.png" style="height: 60px;"></img></a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header-16">
+                    <span class="navbar-toggler-trigram">&#9776;</span>
+                </button>
+
+                <div class="navbar-collapse collapse" id="header-16">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link active" href="#">Главная</a>
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" data-trigger="hover">Разделы</a>
+                            <div class=" dropdown-menu">
+                                <a class="dropdown-item" href="#">Ссылка</a>
+                                <a class="dropdown-item" href="javascript:void(0)">Ссылка</a>
+                                <a class="dropdown-item" href="javascript:void(0)">Ссылка</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="javascript:void(0)">Ссылка</a>
+                            </div>
+                        </div>
+                        <a class="nav-item nav-link" href="#">О нас</a>
+                        <a class="nav-item nav-link" href="#">Контакты</a>
+                    </div>
+
+                    <div class="navbar-nav align-items-lg-center ml-auto">
+                        <a class="nav-item nav-link mr-lg-4" href="#">
+                            <i class="fab fa-youtube" style="color: #FF0000"></i>
+                            <span class="d-lg-none align-middle">&nbsp; YouTube </span>
+                        </a>
+                        <a class="nav-item nav-link mr-lg-4" href="#">
+                            <i class="fab fa-vk" style="color: #5181B8"></i>
+                            <span class="d-lg-none align-middle">&nbsp; VK</span>
+                        </a>
+                        <a class="nav-item nav-link mr-lg-4" href="#">
+                            <i class="fab fa-telegram-plane" style="color: #64A9DC"></i>
+                            <span class="d-lg-none align-middle">&nbsp; Telegram </span>
+                        </a>
+                        <a class="nav-item nav-link mr-lg-4" href="#">
+                            <i class="fab fa-instagram" style="color: #212121"></i>
+                            <span class="d-lg-none align-middle">&nbsp; Instagram</span>
+                        </a>
+                        <a class="nav-item nav-link mr-lg-4" href="#">
+                            <i class="fab fa-facebook-square" style="color: #5181B8"></i>
+                            <span class="d-lg-none align-middle">&nbsp; Facebook</span>
+                        </a>
+
+                        <!-- Search -->
+                        <label class="nav-item nav-link navbar-search-box">
+                            <i class="ion ion-ios-search navbar-icon align-middle"></i>
+                            <span class="navbar-search-input">
+                                <input type="text" class="form-control mx-2" placeholder="Search..." style="width:140px">
+                                <a href="#" class="navbar-search-cancel">×</a>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <!-- / Navbar -->

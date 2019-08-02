@@ -74,7 +74,10 @@
         var mySwiperr = new Swiper('.travel-swiper', {
             slidesPerView: 1,
             spaceBetween: 30,
-
+            autoplay: {
+                  delay: 5000,
+                  disableOnInteraction: false,
+                },
             pagination: {
                 el: '.swiper-pagination2',
                 clickable: true,
@@ -88,6 +91,11 @@
     </script>
     <script type="text/javascript">
         var section_swiper = new Swiper('.section-swiper', {
+            loop: false,
+            autoplay: {
+                  delay: 5000,
+                  disableOnInteraction: false,
+                },
             pagination: {
                 el: '.swiper-pagination3',
                 clickable: true,

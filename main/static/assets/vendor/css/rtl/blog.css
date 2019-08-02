@@ -139,14 +139,14 @@ li{
 
 .site-sections .sections{
     display: flex;
-    flex-direction: column;
-    width: 100%;
+    justify-content: space-around;
+    width: 80%;
     margin: auto;
 }
 
 .site-sections .sections .card{
     width: 80%;
-    margin: auto;
+    margin-left: 10px;
     margin-bottom: 20px;
 }
 .site-sections .sections .card .card-body h4 a .info{
@@ -243,4 +243,15 @@ main .section-swiper{
         visibility: visible;
         position: static;
     }
+
+    main .section-swiper{
+        width: 100%;
+    }
+}
+
+
+.section{
+    width: 80%;
+    margin: auto;
+    margin-top: 150px;
 }

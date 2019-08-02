@@ -55,7 +55,7 @@ li{
 .about h2{
     margin: auto;
     width: 50%;
-    font-weight: 500;
+    font-weight: 400;
     text-align: center;
     color: #212121 !important;
 }
@@ -98,6 +98,7 @@ li{
     margin: auto;
     width: 50%;
     text-align: center;
+    font-weight: 400;
 }
 
 .unussial .posts{
@@ -139,7 +140,7 @@ li{
 .site-sections h2{
     padding: 50px 0;
     text-align: center;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .site-sections .sections{
@@ -247,6 +248,11 @@ main .section-swiper{
     .site-sections .direction-swiper{
         visibility: visible;
         position: static;
+    }
+    .site-sections h2{
+        text-align: left;
+        width: 80%;
+        margin: auto;
     }
 
     main .section-swiper{

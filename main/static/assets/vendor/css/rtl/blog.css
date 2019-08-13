@@ -216,6 +216,25 @@ main .section-swiper{
     font-size: 3rem !important;
 }
 
+.post_body{
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 80%;
+}
+.post_body .post_start{
+    display: flex;
+    justify-content: space-between;
+}
+
+.post_body .share{
+    display: flex;
+}
+
+.post_body .post_text{
+    margin-top: 30px;
+    font-size: 18px;
+    color: #212121;
+}
 
 @media (min-width: 991px){
     .navbar{

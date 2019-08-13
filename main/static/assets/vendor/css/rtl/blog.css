@@ -109,6 +109,7 @@ li{
 
 .unussial .posts .card{
     border: 0;
+    margin-bottom: 50px;
 }
 .unussial .card .card-body{
     padding: 0;
@@ -122,7 +123,6 @@ li{
 }
 
 .card-text{
-    margin-top: 30px;
     color: #212121 !important;
     font-size: 18px !important;
     font-weight: 300 !important;
@@ -184,6 +184,39 @@ main .section-swiper{
     margin: 50px auto;
     width: 80%;
 }
+
+.post_page .direct{
+    font-size: 12px;
+    font-weight: 300;
+    color: #fff;
+}
+.post_page .portfolio-image{
+    height: 100% !important;
+}
+
+.post_page #portfolio-slider{
+    min-height: 75vh;
+}
+
+.post_page #portfolio-slider .swiper-slide {
+    min-height: 75vh;
+}
+
+.post_page #portfolio-slider .slider-content {
+    min-height: 48vh;
+}
+.post_page .slider-small{
+    margin-top: 10px;
+}
+.post_page #portfolio-slider .slider-content .main-text{
+    margin-top: 10vh;
+}
+
+.post_page .portfolio-caption{
+    font-size: 3rem !important;
+}
+
+
 @media (min-width: 991px){
     .navbar{
         background-color: transparent !important;

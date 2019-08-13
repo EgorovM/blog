@@ -5,6 +5,7 @@ from . import views
 urlpatterns = [
     url(r'^$', views.index, name = 'index'),
     url(r'^section/$', views.section, name = 'section'),
+    url(r'^post/$', views.post, name = 'post'),
     # url(r'^(?P<order_id>[0-9]+)/$', views.order, name='order'),
     # url(r'^login/$', views.login, name = 'login'),
     # url(r'^logout/$', views.logout, name = 'logout'),

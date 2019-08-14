@@ -255,6 +255,19 @@ main .section-swiper{
     }
 }
 
+@media (max-width: 1200px){
+
+        .post_page .portfolio-caption{
+            font-size: 26px !important;
+        }
+        .post_page .main-text a{
+            font-size: 14px !important;
+        }
+
+        .post_page #portfolio-slider .slider-content .main-text{
+            margin-top: 0;
+        }
+}
 @media (max-width: 1000px) {
     .about h2{
         font-size: 22px;
@@ -309,16 +322,5 @@ main .section-swiper{
 
     main .section-swiper{
         width: 100%;
-    }
-
-    .post_page .portfolio-caption{
-        font-size: 26px !important;
-    }
-    .post_page .main-text a{
-        font-size: 14px !important;
-    }
-
-    .post_page #portfolio-slider .slider-content .main-text{
-        margin-top: 0;
     }
 }

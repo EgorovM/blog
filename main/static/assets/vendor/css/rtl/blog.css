@@ -317,4 +317,8 @@ main .section-swiper{
     .post_page .main-text a{
         font-size: 14px !important;
     }
+
+    .post_page #portfolio-slider .slider-content .main-text{
+        margin-top: 0;
+    }
 }

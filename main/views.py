@@ -38,3 +38,7 @@ def post(request):
     context = {}
 
     return render(request, 'main/post.html', context);
+
+def landing(request):
+
+    return render(request, 'main/landing.html')

@@ -1,0 +1,552 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+
+<!-- Add landing-2 to html element -->
+<html lang="en" class="landing-2 default-style">
+<head>
+  <title> EdLoop / Эдлуп — платформа для онлайн занятий</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,500,600,700" rel="stylesheet">
+
+  <!-- Icon fonts -->
+  <link rel="stylesheet" href="{% static 'assets/vendor/fonts/ionicons.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/vendor/fonts/linearicons.css' %}">
+
+  <!-- Core stylesheets -->
+  <link rel="stylesheet" href="{% static 'assets/vendor/css/rtl/bootstrap.css' %}" class="theme-settings-bootstrap-css">
+  <link rel="stylesheet" href="{% static 'assets/vendor/css/rtl/appwork.css' %}" class="theme-settings-appwork-css">
+  <link rel="stylesheet" href="{% static 'assets/vendor/css/rtl/theme-corporate.css' %}" class="theme-settings-theme-css">
+  <link rel="stylesheet" href="{% static 'assets/vendor/css/rtl/colors.css' %}" class="theme-settings-colors-css">
+  <link rel="stylesheet" href="{% static 'assets/vendor/css/rtl/uikit.css' %}">
+
+  <script src="{% static 'assets/vendor/js/material-ripple.js' %}"></script>
+  <script src="{% static 'assets/vendor/js/layout-helpers.js' %}"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Page -->
+  <link rel="stylesheet" href="{% static 'assets/css/landing.css' %}">
+
+  <!-- Libs -->
+  <link rel="stylesheet" href="{% static 'assets/vendor/libs/swiper/swiper.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/vendor/libs/plyr/plyr.css' %}">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="landing-navbar navbar navbar-expand-lg navbar-dark fixed-top pt-lg-4">
+    <div class="container-fluid px-3">
+      <a href="#" class="navbar-brand text-big font-weight-bolder line-height-1 text-expanded py-3">EDLOOP</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#landing-navbar-collapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="landing-navbar-collapse">
+        <div class="navbar-nav align-items-lg-center ml-auto">
+          <div class="nav-item py-2 py-lg-0 ml-lg-4">
+            <a href="#" class="btn btn-outline-white btn-round borderless">Войти</a>
+          </div>
+          <div class="nav-item py-2 py-lg-0 ml-lg-1">
+            <a href="#" class="btn btn-primary btn-round">Регистрация</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- / Navbar -->
+
+  <!-- Header -->
+  <div class="jumbotron ui-hero ui-mh-100vh ui-bg-cover ui-bg-fixed ui-bg-overlay-container text-white" style="background-image: url('https://onlinerepetitor.net/uploads/tinymce/services%20for%20tutors/scrensaver.jpg');">
+    <div class="ui-bg-overlay bg-dark opacity-50"></div>
+    <div class="container py-5 px-3">
+      <div class="row pt-4">
+        <div class="w-100">
+
+          <div class="col-md-11 col-lg-8 col-xl-7 text-center mx-auto mb-5">
+            <h1 class="display-3 font-secondary font-weight-bolder mb-4">Обучайте своих учеников в EdLoop</h1>
+            <div class="lead opacity-75">
+              Мы предлагаем удобные и эффективные инструменты для проведения онлайн репетиторских занятий по математике
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- / Header -->
+
+  <div class="bg-white">
+
+    <!-- Block -->
+    <div class="landing-block pb-5">
+      <div class="container px-3">
+
+        <div class="col-md-10 col-lg-8 col-xl-7 text-center p-0 mx-auto">
+          <div class="display-3 text-primary mb-4">
+            <i class="lnr lnr-rocket"></i>
+          </div>
+          <h1 class="display-4 font-secondary font-weight-semibold mb-5">
+            Очень удобное приложение для репетиторства
+          </h1>
+          <div class="text-muted">
+            Наш сервис совмешает 100 отдельных сервисов и предлагает отличное решение для работы онлайн с детьми.
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- / Block -->
+
+    <div class="landing-separator-stripes my-4"></div>
+
+    <!-- Block -->
+    <div class="landing-block pt-5">
+      <div class="container px-3">
+        <div class="row justify-content-between align-items-center">
+
+          <div class="col-lg-5 col-xl-4 text-lg-left text-center mx-auto">
+            <div class="text-lighter text-tiny font-weight-bold mb-3">Введение</div>
+            <h1 class="display-4 font-secondary font-weight-semibold mb-4">Первое знакомство</h1>
+            <p class="text-muted">
+                Рассказываем об нашем сервисе коротко и ясно!
+            </p>
+          </div>
+
+          <div class="col-lg-7 col-xl-7 mt-5 mt-lg-0">
+            <div id="landing-video" data-type="youtube" data-video-id="Qk9nON5QNTE" class="w-100"></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- / Block -->
+
+  </div>
+
+  <!-- Block -->
+  <div id="features" class="landing-block">
+    <div class="container px-3">
+
+      <div class="col-md-10 col-lg-8 col-xl-7 text-center p-0 mx-auto">
+        <div class="text-lighter text-tiny font-weight-bold mb-3">Преимущества</div>
+        <h1 class="display-4 font-secondary font-weight-semibold mb-4">
+          Все что вы хотели в одном сервисе
+        </h1>
+        <div class="lead text-muted mb-5">
+            Больше не нужно открывать 100500 вкладок, все в одной страничке!
+        </div>
+      </div>
+
+      <hr class="landing-separator border-light mx-auto">
+
+      <div class="row text-center">
+        <div class="col-md-4 mt-5">
+          <div class="display-4 text-primary mx-auto mb-4">
+            <span class="lnr lnr-home"></span>
+          </div>
+          <h5>Виртуальная комната</h5>
+          <div class="text-muted small">
+            Видеосвязь, онлайн доска и мгновенный обмен файлами, все это вы найдете в нашей виртуальной учебной комнате.
+          </div>
+        </div>
+        <div class="col-md-4 mt-5">
+          <div class="display-4 text-primary mx-auto mb-4">
+            <span class="lnr lnr-star"></span>
+          </div>
+          <h5>Личный сборник задач</h5>
+          <div class="text-muted small">
+            Добавляйте в свой личный сборник задачи с возможностью автоматизированной проверки ответов.
+          </div>
+        </div>
+        <div class="col-md-4 mt-5">
+          <div class="display-4 text-primary mx-auto mb-4">
+            <span class="lnr lnr-layers"></span>
+          </div>
+          <h5>Поддерживаемые платформы</h5>
+          <div class="text-muted small">
+              ОС: Windows 7 и выше, OS X 10.10 и выше
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- / Block -->
+
+  <!-- Block -->
+  <div class="landing-block bg-lighter overflow-hidden">
+    <div class="container">
+          <div class="text-center text-lighter text-tiny font-weight-bold mb-3">Аналоги</div>
+          <h1 class="display-4 font-secondary text-center font-weight-semibold">
+              Что мы сейчас имеем
+          </h1>
+          <hr class="landing-separator border-primary mx-auto mt-5 mb-4">
+      <div class="row justify-content-between align-items-center">
+
+        <div class="col-lg-5 col-xl-5">
+          <div class="ui-presentation-right ui-window float-right rounded">
+            <div class="window-content">
+              <img src="/media/screen.png" alt>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-xl-5 text-lg-left text-center mx-auto mt-5 mt-lg-0">
+          <h5 class="mb-2">Онлайн репетиторство</h5>
+          <div class="text-muted small">
+            На данный момент, это самый популярный и удобный вид индивидуальных занятий.
+          </div>
+
+          <h5 class="mt-5 mb-2">Репетиторы</h5>
+          <div class="text-muted small">
+            Грамотный репетитор сайта поможет быстро овладеть основами предмета, вспомнить забытые или наверстать упущенные знания.
+          </div>
+
+          <h5 class="mt-5 mb-2">Занятия</h5>
+          <div class="text-muted small">
+            Самая распространенная программа для онлайн подготовки к ЕГЭ — это Skype. </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- / Block -->
+
+  <!-- Block -->
+  <div id="screenshots" class="landing-block bg-white">
+    <div class="container px-3">
+      <div class="text-center text-lighter text-tiny font-weight-bold mb-3">Скриншоты</div>
+      <h1 class="display-4 font-secondary text-center font-weight-semibold">
+          Процесс занятий
+      </h1>
+    </div>
+    <hr class="landing-separator border-primary mx-auto mt-5 mb-4">
+
+    <div class="app-preview-slider-wrapper">
+      <div class="app-preview-slider swiper-container" id="landing-preview-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="/media/screen0.png" alt="" class="img-fluid cursor-pointer">
+            </div>
+          <div class="swiper-slide">
+            <img src="/media/screen1.png" alt="" class="img-fluid cursor-pointer">
+          </div>
+          <div class="swiper-slide">
+            <img src="/media/screen2.png" alt="" class="img-fluid cursor-pointer">
+          </div>
+          <div class="swiper-slide">
+            <img src="/media/screen3.png" alt="" class="img-fluid cursor-pointer">
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+  <!-- / Block -->
+
+  <!-- Block -->
+  <div class="landing-block container px-3">
+
+    <div class="text-center text-lighter text-tiny font-weight-bold mb-3">Инструкции</div>
+    <h1 class="display-4 font-secondary text-center font-weight-semibold">
+      Как это работает
+    </h1>
+
+    <hr class="landing-separator border-success mx-auto mt-5 mb-4">
+
+    <div class="row text-center">
+      <div class="col-md-4 my-4">
+        <div class="text-success mx-auto mb-4">
+          <span class="ui-icon font-weight-bolder">
+          <i class="ion ion-md-aperture"></i>
+        </span>
+        </div>
+        <h5>Регистрация</h5>
+        <div class="text-muted small">
+            Создайте учетную запись на нашем сайте.
+          </div>
+      </div>
+      <div class="col-md-4 my-4">
+        <div class="text-success mx-auto mb-4">
+          <span class="ui-icon font-weight-bolder">
+          <i class="ion ion-md-brush"></i>
+        </span>
+        </div>
+        <h5>Создание команты</h5>
+        <div class="text-muted small">
+          Создайте комнату и запомните ее номер.
+        </div>
+      </div>
+      <div class="col-md-4 my-4">
+        <div class="text-success mx-auto mb-4">
+          <span class="ui-icon font-weight-bolder">
+          <i class="ion ion-md-cloud-upload"></i>
+        </span>
+        </div>
+        <h5>Приглашение</h5>
+        <div class="text-muted small">
+          Скажите ученику номер комнаты и он присоединиться!
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-5">
+      <button type="button" class="landing-btn btn btn-success btn-lg">Больше</button>
+    </div>
+
+  </div>
+  <!-- / Block -->
+
+  <!-- Block -->
+  <div class="landing-block ui-bg-cover ui-bg-fixed ui-bg-overlay-container text-white" style="background-image: url('assets/img/pages/landing-users.jpg');">
+    <div class="ui-bg-overlay bg-dark opacity-75"></div>
+    <div class="container px-3">
+
+      <div class="text-center text-tiny font-weight-bold opacity-50 mb-3">Отзывы</div>
+      <h1 class="display-4 font-secondary text-center font-weight-semibold mb-5">
+        Что о нас говорят
+      </h1>
+
+      <hr class="landing-separator border-primary mx-auto mb-5">
+
+      <div class="col-md-10 col-lg-8 col-xl-7 position-relative px-5 mx-auto">
+        <div class="swiper-container w-auto text-center mx-3" id="landing-testimonials-slider">
+          <div class="swiper-wrapper align-items-stretch">
+
+            <div class="swiper-slide h-auto">
+              <img src="https://pp.userapi.com/c845121/v845121624/ef827/De33EpPvBFM.jpg?ava=1" class="ui-w-80 rounded-circle" alt>
+              <div class="ui-customer-review my-3">
+                Занятия будут проходить на специальной обучающей платформе для математиков. https://edloop.ru/ Это отличный инструмент, в 100 раз лучше Скайпа.
+              </div>
+              <strong>Виктория Фефелова</strong>
+              <br>
+              <a href="#" class="text-white small opacity-75">https://vk.com/vika_spb2015</a>
+            </div>
+
+            <div class="swiper-slide h-auto">
+              <img src="https://pp.userapi.com/c845121/v845121624/ef827/De33EpPvBFM.jpg?ava=1" class="ui-w-80 rounded-circle" alt>
+              <div class="ui-customer-review my-3">
+                Занятия будут проходить на специальной обучающей платформе для математиков. https://edloop.ru/ Это отличный инструмент, в 100 раз лучше Скайпа.
+              </div>
+              <strong>Виктория Фефелова</strong>
+              <br>
+              <a href="#" class="text-white small opacity-75">https://vk.com/vika_spb2015</a>
+            </div>
+
+            <div class="swiper-slide h-auto">
+              <img src="https://pp.userapi.com/c845121/v845121624/ef827/De33EpPvBFM.jpg?ava=1" class="ui-w-80 rounded-circle" alt>
+              <div class="ui-customer-review my-3">
+                Занятия будут проходить на специальной обучающей платформе для математиков. https://edloop.ru/ Это отличный инструмент, в 100 раз лучше Скайпа.
+              </div>
+              <strong>Виктория Фефелова</strong>
+              <br>
+              <a href="#" class="text-white small opacity-75">https://vk.com/vika_spb2015</a>
+            </div>
+
+          </div>
+        </div>
+
+        <div id="landing-testimonials-slider-next" class="swiper-button-next custom-icon">
+          <i class="lnr lnr-chevron-right text-lighter"></i>
+        </div>
+        <div id="landing-testimonials-slider-prev" class="swiper-button-prev custom-icon">
+          <i class="lnr lnr-chevron-left text-lighter"></i>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- / Block -->
+
+  <div id="pricing" class="landing-block container px-3">
+
+    <div class="text-center text-lighter text-tiny font-weight-bold mb-3">Цены</div>
+    <h1 class="display-4 font-secondary text-center font-weight-semibold">
+      Платите только за то, что вам нужно
+    </h1>
+
+    <hr class="landing-separator border-primary my-5 mx-auto">
+
+    <div class="row no-gutters row-bordered text-center pt-4">
+
+      <div class="d-flex col-md flex-column py-4">
+        <h5 class="m-0">Базовое</h5>
+        <div class="flex-grow-1">
+          <div class="py-4 my-2">
+            <span class="d-inline-block text-muted text-big align-middle mr-2">	&#8381;</span>
+            <span class="display-3 d-inline-block font-weight-bold align-middle">100500</span>
+            <span class="d-inline-block text-muted text-big align-middle ml-2">/ мес.</span>
+          </div>
+          <div class="pb-5">
+              <p class="small mb-2"> Базовый набор инструментов</p>
+            <p class="small mb-2">5 комнат</p>
+          </div>
+        </div>
+        <div class="px-md-3 px-lg-5">
+          <button type="button" class="landing-btn btn btn-outline-primary btn-lg btn-round">Выбрать</button>
+        </div>
+      </div>
+
+      <div class="d-flex col-md flex-column py-4">
+        <h5 class="m-0">Продвинутое</h5>
+        <div class="flex-grow-1">
+          <div class="py-4 my-2">
+            <span class="d-inline-block text-muted text-big align-middle mr-2">	&#8381;</span>
+            <span class="display-3 d-inline-block font-weight-bold align-middle">100500</span>
+            <span class="d-inline-block text-muted text-big align-middle ml-2">/ мес.</span>
+          </div>
+          <div class="pb-5">
+              <p class="small mb-2"> Все инструменты </p>
+            <p class="small mb-2">20 комнат</p>
+          </div>
+        </div>
+        <div class="px-md-3 px-lg-5">
+          <button type="button" class="landing-btn btn btn-primary btn-lg btn-round">Выбрать</button>
+        </div>
+      </div>
+
+      <div class="d-flex col-md flex-column py-4">
+        <h5 class="m-0">Командное</h5>
+        <div class="flex-grow-1">
+          <div class="py-4 my-2">
+            <span class="d-inline-block text-muted text-big align-middle mr-2">	&#8381;</span>
+            <span class="display-3 d-inline-block font-weight-bold align-middle">100500</span>
+            <span class="d-inline-block text-muted text-big align-middle ml-2">/ мес.</span>
+          </div>
+          <div class="pb-5">
+              <p class="small mb-2"> Все инструменты </p>
+            <p class="small mb-2"> &infin; комнат</p>
+          </div>
+        </div>
+        <div class="px-md-3 px-lg-5">
+          <button type="button" class="landing-btn btn btn-outline-primary btn-lg btn-round">Выбрать</button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- / Block -->
+
+  <!-- Block -->
+  <div class="landing-block bg-light">
+    <div class="container px-3">
+
+      <div class="col-md-10 col-lg-8 col-xl-7 text-center p-0 mx-auto">
+        <h1 class="display-4 font-secondary font-weight-semibold">
+          Наша команда
+        </h1>
+        <div class="lead text-muted pb-3 mt-4 mb-5">
+            Люди, которые для вас пахают
+          </div>
+      </div>
+
+      <div class="row text-center">
+        <div class="col-sm-6 col-lg-4 p-4">
+          <img src="https://pp.userapi.com/c850324/v850324477/19f618/lb0WRD2bJvc.jpg?ava=1" class="ui-w-120 rounded-circle mb-4" alt>
+          <h5 class="font-weight-bold mb-2">Анастасия Позднякова</h5>
+          <div class="text-light small mb-3">Онлайн репетитор</div>
+          <div class="text-muted small">
+            Она является носителем воли клиента и как никто другой понимает репетиторов </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 p-4">
+          <img src="https://sun9-1.userapi.com/c836434/v836434314/c89d/asezuHYlvQM.jpg?ava=1" class="ui-w-120 rounded-circle mb-4" alt>
+          <h5 class="font-weight-bold mb-2">Иннокентий Дьячковский</h5>
+          <div class="text-light small mb-3">Креативных директор</div>
+          <div class="text-muted small">
+            Кандидат экономических наук и предприниматель.
+        </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 p-4">
+          <img src="https://sun9-29.userapi.com/c836525/v836525942/34ad/Cj3BNjo4HG8.jpg?ava=1" class="ui-w-120 rounded-circle mb-4" alt>
+          <h5 class="font-weight-bold mb-2">Юрий Владимирович</h5>
+          <div class="text-light small mb-3">Программист</div>
+          <div class="text-muted small">
+            Программист беспилотных машин и учитель информатики с большим стажем</div>
+        </div>
+    </div>
+  </div>
+  <!-- / Block -->
+
+  <!-- Block -->
+  <div id="subscribe" class="bg-secondary text-white py-5">
+    <div class="container px-3">
+      <div class="row align-items-center">
+
+        <div class="font-secondary col-md-5 col-lg-4 text-xlarge font-weight-light">
+          Присоединяйтесь к нам
+        </div>
+
+        <div class="col-md-7 col-lg-8 mt-3 mt-md-0">
+          <div class="input-group">
+            <input type="email" class="form-control form-control-inverted form-control-lg bg-lighter border-0 px-3" placeholder="E-mail">
+            <span class="input-group-append">
+                <button type="submit" class="btn btn-primary btn-lg">Начать</button>
+              </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- / Block -->
+
+  <!-- Footer -->
+  <nav class="footer bg-white pt-4">
+    <div class="container text-center py-4">
+      <div class="pb-3">
+        <a href="#" class="footer-text text-big font-weight-bolder text-expanded">Edloop</a>
+        <span class="align-top">©</span>
+      </div>
+      <hr class="mb-4">
+      <div class="row">
+        <div class="col-6 col-sm pb-4">
+          <div class="footer-text font-secondary text-tiny font-weight-bold mb-3">О нас</div>
+          <a href="#" class="footer-link d-block small pb-2">Мы</a>
+          <a href="#" class="footer-link d-block small pb-2">Наша история</a>
+          <a href="#" class="footer-link d-block small pb-2">Карьера</a>
+        </div>
+        <div class="col-6 col-sm pb-4">
+          <div class="footer-text font-secondary text-tiny font-weight-bold mb-3">Помощь</div>
+          <a href="#" class="footer-link d-block small pb-2">FAQ</a>
+          <a href="#" class="footer-link d-block small pb-2">Помощь</a>
+          <a href="#" class="footer-link d-block small pb-2">Консультация</a>
+        </div>
+        <div class="col-6 col-sm pb-4">
+          <div class="footer-text font-secondary text-tiny font-weight-bold mb-3">Партнерство</div>
+          <a href="#" class="footer-link d-block small pb-2">Соглашение</a>
+          <a href="#" class="footer-link d-block small pb-2">Условия</a>
+          <a href="#" class="footer-link d-block small pb-2">Как стать</a>
+        </div>
+        <div class="col-6 col-sm pb-4">
+          <div class="footer-text font-secondary text-tiny font-weight-bold mb-3">Контакты</div>
+          <a href="#" class="footer-link d-block small pb-2">
+          <i class="ion ion-logo-twitter text-twitter"></i> &nbsp;Twitter</a>
+          <a href="#" class="footer-link d-block small pb-2">
+          <i class="ion ion-logo-facebook text-facebook"></i> &nbsp;Facebook</a>
+          <a href="#" class="footer-link d-block small pb-2">
+          <i class="ion ion-logo-instagram text-instagram"></i> &nbsp;Instagram</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- / Footer -->
+
+  <!-- Core scripts -->
+  <script src="{% static 'assets/vendor/libs/popper/popper.js' %}"></script>
+  <script src="{% static 'assets/vendor/js/bootstrap.js' %}"></script>
+
+  <!-- Libs -->
+  <script src="{% static 'assets/vendor/libs/swiper/swiper.js' %}"></script>
+  <script src="{% static 'assets/vendor/libs/plyr/plyr.js' %}"></script>
+
+  <!-- Page -->
+  <script src="{% static 'assets/js/landing.js' %}"></script>
+</body>
+</html>

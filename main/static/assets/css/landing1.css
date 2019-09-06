@@ -1,0 +1,189 @@
+a{
+    text-decoration: none;
+}
+.card{
+    border: 0;
+}
+li{
+    list-style-type: none;
+}
+
+header{
+    background: #F4F4F4;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 25px;
+}
+
+nav .nav-links a{
+    font-size: 1rem;
+    color: #000;
+    margin-left: 50px;
+}
+
+nav .nav-links a:hover{
+    opacity: 0.8;
+}
+
+main{
+    margin-top: 30px;
+}
+
+.main__choice{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main__choice .card{
+}
+
+.main__choice .card img{
+    max-height: 200px;
+}
+
+.main__form{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.main__form .text{
+    text-align: center;
+}
+
+.main__form .text h3{
+    margin-top: -5px;
+}
+
+.main__form .form_cards{
+    display: flex;
+    justify-content: center;
+
+}
+
+.main__form .form_cards .card{
+    border: 1px solid #8b8b8b;
+    margin-left: 90px;
+    padding: 20px 10px;
+}
+
+.main__steps{
+    width: 100%;
+    margin-top: 50px;
+    background: #f4f4f4;
+}
+
+.main__steps h2{
+    text-align: center;
+    padding-top: 100px
+}
+
+.main__steps .steps{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__steps .steps .step{
+    width: 30%;
+    margin-bottom: 150px;
+}
+
+.main__steps .steps .arrow .arr{
+    font-size: 1.5rem;
+}
+
+.main__job{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.main__job .text{
+    margin-top: 70px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.main__advantages{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.main__advantages .text{
+    margin-top: 70px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.main__advantages .cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__advantages .cards .card{
+    width: 25%;
+}
+
+.main__job.feedback{
+    width: 100%;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.main__job.feedback .text{
+    padding-top: 70px;
+}
+
+.main__job.feedback iframe{
+    margin-bottom: 60px;
+}
+.main__team{
+    width: 60%;
+    margin: 0 auto;
+}
+.main__team h2{
+    margin-top: 50px;
+    text-align: center;
+}
+.main__team .cards{
+    display: flex;
+    justify-content: space-between;
+}
+.main__team .cards .card{
+    width: 33%;
+}
+.main__team .cards .card h3{
+    text-align: center;
+}
+.main__upgrade{
+    width: 60%;
+    margin: 0 auto;
+}
+.main__upgrade h2{
+    margin-top: 100px;
+    text-align: center;
+}
+.main__upgrade .cards{
+    display: flex;
+    justify-content: space-between;
+}
+.main__upgrade .cards .card{
+    width: 33%;
+}
+.main__upgrade .cards .card h3{
+    text-align: center;
+}
+.main__questions{
+    width: 60%;
+    margin: 0 auto;
+}
+.main__questions h2{
+    margin-top: 100px;
+    text-align: center;
+}

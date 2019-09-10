@@ -8,28 +8,11 @@ li{
     list-style-type: none;
 }
 
-header{
-    background: #F4F4F4;
-}
-
 nav{
-    display: flex;
-    justify-content: space-around;
-    padding-top: 25px;
+    background-color: #f4f4f4;
 }
-
-nav .nav-links a{
-    font-size: 1rem;
-    color: #000;
-    margin-left: 50px;
-}
-
-nav .nav-links a:hover{
-    opacity: 0.8;
-}
-
 main{
-    margin-top: 30px;
+    margin-top: 70px;
 }
 
 .main__choice{
@@ -186,4 +169,100 @@ main{
 .main__questions h2{
     margin-top: 100px;
     text-align: center;
+}
+
+
+@media (max-width: 1000px) {
+    .main__choice{
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .main__choice .card{
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .main__form{
+        width: 90%;
+    }
+
+    .main__form .form_cards{
+        flex-direction: column;
+    }
+
+    .main__form .form_cards .card{
+        margin: 0;
+    }
+
+    .main__steps .text{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .main__steps .steps{
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .main__steps .steps .step{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .main__steps .steps .arrow{
+        margin: 0 auto;
+    }
+
+    .main__steps .steps .arrow .arr{
+        content: "";
+    }
+
+    .main__job{
+        width: 90%;
+    }
+
+    .main__advantages{
+        width: 90%;
+    }
+
+    .main__advantages .cards{
+        flex-direction: column;
+
+    }
+
+    .main__advantages .cards .card{
+        width: 100%;
+    }
+
+    .main__team{
+        width: 90%;
+    }
+
+    .main__team .cards{
+        flex-direction: column;
+    }
+
+    .main__team .cards .card{
+        width: 100%;
+    }
+
+    .main__upgrade{
+        width: 90%;
+    }
+
+    .main__upgrade .cards{
+        flex-direction: column;
+    }
+
+    .main__upgrade .cards .card{
+        width: 100%;
+    }
+
+    .main__questions{
+        width: 100%;
+    }
+
+    .q-btn{
+        color: #1e70cd !important;
+    }
 }

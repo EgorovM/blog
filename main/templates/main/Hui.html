@@ -1,0 +1,484 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+
+<!-- Add landing-2 to html element -->
+<html lang="en" class="landing-2 default-style">
+
+<head>
+    <title> EdLoop / Эдлуп — платформа для онлайн занятий</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="Edloop">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- Core stylesheets -->
+    <link rel="stylesheet" href="{% static 'assets/vendor/css/rtl/bootstrap.css' %}" class="theme-settings-bootstrap-css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.0/css/swiper.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <!-- Page -->
+    <link rel="stylesheet" href="{% static 'assets/css/landing1.css' %}">
+    <script src="https://kit.fontawesome.com/ba974a8480.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <a class="navbar-brand" href="#">
+                <img src="/media/static/images/logo.png" width="130" height="50" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Блог <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Войти</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Зарегистрироваться</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main__choice">
+            <div class="card">
+                <img src="https://img1.liveinternet.ru/images/attach/b/4/103/677/103677947_P9180004_clipped_rev_1.png">
+                <p>Ученик?<br>
+                    Заходи, тестируй,<br>
+                    приглашай учителей.
+                </p>
+            </div>
+            <div class="card">
+                <img src="http://oprezi.ru/fl/image.raw?view=image&type=img&id=16">
+                <p>Учитель? <br>
+                    Заходи, тестируй,<br>
+                    приглашай учеников.
+                </p>
+            </div>
+        </div>
+        <div class="main__form">
+            <div class="text">
+                <h1>EdLoop - платформа для индивидуальных онлайн занятий<h1>
+                <h3>Онлайн доски, стабильная видеосвязь, обмен учебниками, чат и другие инструменты для репетитора на одном сайте.</h3>
+            </div>
+
+            <div class="form_cards">
+                <div class="card">
+                    <h3>Войти и заниматься</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="inputAddress">E-mail: <font style="color:red">*</font></label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress">Пароль</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <button type="submit" class="btn btn-success">Войти</button>
+                    </form>
+                </div>
+                <div class="card">
+                    <h3>Попробовать онлайн <br>доску</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="inputAddress">E-mail для регистрации: <font style="color:red">*</font></label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <button type="submit" class="btn btn-success mx-auto">Попробовать</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="main__steps">
+            <div class="text">
+                <h2>3 шага для начала онлайн занятия в EdLoop</h2>
+            </div>
+
+            <div class="steps">
+                <div class="step">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <p>Зарегистрируйте
+                        репетитора и ученика
+                        <p>
+                </div>
+                <div class="arrow">
+                    <i class="far fa-arrow-alt-circle-right"></i>
+                </div>
+                <div class="step">
+                    <i class="far fa-user-circle"></i>
+                    <i class="far fa-comments"></i>
+                    <i class="far fa-user-circle"></i>
+                    <p>Создайте комнату и пригласите ученика,
+                        передав ему номер созданной комнаты
+                        <p>
+                </div>
+                <div class="arrow">
+                    <i class="far fa-arrow-alt-circle-right"></i>
+                </div>
+
+                <div class="step">
+                    <i class="far fa-user-circle"></i>
+                    <i class="fas fa-desktop"></i>
+                    <i class="far fa-user-circle"></i>
+                    <p>Занимайтесь с учеником на онлайн доске с видеосвязью, чатом и обменом файлов
+                    <p>
+                </div>
+            </div>
+        </div>
+
+        <div class="main__job">
+            <div class="text">
+                <h2>Как работать на онлайн доске в EdLoop</h2>
+            </div>
+            <iframe width="100%" height="500px" src="https://www.youtube.com/embed/aBXMXdbYWLw">
+            </iframe>
+        </div>
+
+        <div class="main__steps">
+            <div class="text">
+                <h2>Процесс занятий</h2>
+            </div>
+
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="/media/static/images/screen1.png">
+                        <p>Регистрируйтесь: пишите своё реальное имя, загружайте фотографию.
+                        И приступайте к работе!
+                        Вариант «Войти в готовую комнату» используйте, если ученик пришёл первым, создал комнату и уже начал работать. Выкладывает там ДЗ, например.
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/media/static/images/screen2.png">
+                        <p>В комнате создавайте новые доски.
+Демонстрируйте собеседнику экран, отправляйте файлы, переписывайтесь в чате.
+
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/media/static/images/screen3.png">
+                        <p>Меняйте размеры окна видео и перемещайте окна. Всё для вашего удобства!
+
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/media/static/images/screen4.png">
+                        <p>1. Загружайте изображения<br>
+2. Перемещайте и масштабируйте. <br>
+3. Можно работать с двумя учениками одновременно. Но только если они находятся за одним компьютером.
+Обратите внимание, что можно заниматься даже  вокалом.
+
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/media/static/images/screen5.png">
+                        <p>Рисуйте на доске, пишите текст, перемещайте объекты.
+Даже маленькие дети быстро осваивают все инструменты.
+
+Используйте разные цвета для работы.
+
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/media/static/images/screen6.png">
+                        <p>Как-то так может выглядеть ваша совместная работа.
+                            <br>
+                                Пробуйте!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+            <br>
+        </div>
+
+        <div class="main__advantages">
+            <div class="text">
+                <h2>EdLoop это удобно, эффективно и просто</h2>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <i class="fas fa-user-friends"></i>
+                    <h5>Создаем с репетиторами</h5>
+                    <p> Мы тесно общаемся с репетиторами в нашем сообществе Вконтакте и создаем новые
+                        инструменты EdLoop по просьбам самих репетиторов, в удобном для них виде.</p>
+                    </p>
+                </div>
+                <div class="card">
+                    <div>
+                        <i class="fab fa-skype"></i>
+                        <i class="fab fa-whatsapp"></i>
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <h5>Все инструменты в одном сайте</h5>
+                    <p> Ненужно открывать 7 приложений чтобы провести онлайн урок, мы создали все необходимые инструменты на одном сайте.</p>
+                    </p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-baby"></i>
+                    <h5>Разберется даже ребенок</h5>
+                    <p> Мы делаем EdLoop максимально простым и понятным для детей, чтобы они могли заниматься беспрепятственно.</p>
+                    </p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-clipboard-list"></i>
+                    <h5>Специально для репетиторов</h5>
+                    <p> Иснтрументы EdLoop разработаны специально для онлайн занятий. </p>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="main__job feedback">
+            <div class="text">
+                <h2>Как работать на онлайн доске в EdLoop</h2>
+            </div>
+            <iframe width="60%" height="500px" src="https://www.youtube.com/embed/aBXMXdbYWLw">
+            </iframe>
+        </div>
+        <div class="main__team">
+            <div class="text">
+                <h2>Команда EdLoop</h2>
+            </div>
+            <img src="/media/static/images/team.png" style="width: 100%;">
+
+            <div class="cards">
+                <div class="card">
+                    <h3>Анастасия Позднякова</h3>
+                    <p> Онлайн <span style="color: blue">репетитор</span> по математике с опытом преподавания в гимназии, в частной и в математической школах. Как репетитор Анастасия готовит к школе, выпускным экзаменам, поступлению в физматшколы,
+                        участию в олимпиадах.</p>
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>Юрий Михайлов</h3>
+                    <p> Инженер-<span style="color: blue">программист</span>.
+                        Разрабатывает беспилотные машины. Имеет опыт работы учителем информатики, подготовил призеров олимпиад по программированию различного уровня, и «стобальников» по ЕГЭ. Продолжает заниматься с учениками из Якутии дистанционно.
+                    </p>
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>Иннокентий Дьячковский</h3>
+                    <p>Бухгалтер и <span style="color: blue">предприниматель</span>. Кандидат экономических наук в области бухгалтерского учета. Бухгалтер с пятнадцатилетним стажем. Последние пять лет развивает собственный бизнес.</p>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="main__upgrade">
+            <div class="text">
+                <h2>Конструируйте EdLoop вместе с нами</h2>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <i class="fab fa-vk"></i>
+                    <p> Вступайте в сообщество VK
+                        Советуйте, тестируйте, помогайте создавать инструменты и пользуйтесь ими</p>
+                    <button class="btn btn-primary">Вступить в VK</button>
+                </div>
+                <div class="card">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <p> Регистрируйтесь и пользуйтесь EdLoop бесплатно</p>
+                    <button class="btn btn-primary">Зарегистрироваться</button>
+                </div>
+                <div class="card">
+                    <i class="fas fa-school"></i>
+                    <p>Вы школа с дистанционным обучением? Создайте свой продукт на базе EdLoop. Свяжитесь с нами.</p>
+                    <button class="btn btn-primary">Связаться</button>
+                </div>
+            </div>
+        </div>
+        <div class="main__questions">
+            <div class="text">
+                <h2>Часто задаваемые вопросы</h2>
+            </div>
+
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="heading1">
+                        <h5 class="mb-0">
+                            <a class="q-btn " data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                Сколько всё это удовольствие стоит?
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#accordion">
+                        <div class="card-body">
+                            На данный момент пользование платформой абсолютно бесплатное, как для учителя, так и для ученика.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="heading2">
+                        <h5 class="mb-0">
+                            <a class="q-btn  collapsed" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                Можно ли проводить урок для нескольких учеников одновременно?
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion">
+                        <div class="card-body">
+                            Нет. И мы не планируем в ближайшее время подключать такую возможность.
+                            Наша цель — создание максимально удобного и максимально эффективного инструмента именно для индивидуальных занятий.
+                            Инструмента, который будет помогать учителю отслеживать сильные и слабые стороны каждого ученика, организовывать повторение, работу над ошибками и оптимальный темп усвоения нового материала.
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="heading3">
+                        <h5 class="mb-0">
+                            <a class=" q-btn collapsed" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                Платформа Эдлуп подходит только для уроков математики?
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordion">
+                        <div class="card-body">
+                            Платформа EdLoop (Эдлуп) подходит для преподавания любых предметов.
+
+                            Есть универсальные инструменты, такие как аудио и видеосвязь, написание текста, работа с картинками…
+                            И есть специфические инструменты. Для математики это: написание формул, построение графиков, построение геометрических фигур, проверка счёта…
+
+                            Для истории это могут быть контурные карты, изучение дат…
+
+                            Универсальные инструменты уже работают. Специфические находятся в разработке. И математика будет первой в этом списке.
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="heading4">
+                        <h5 class="mb-0">
+                            <a class="q-btn  collapsed" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                Мне для преподавания необходимо: …
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordion">
+                        <div class="card-body">
+                            Коллеги! Присоединяйтесь к нашему сообществу в ВК (ссылка). В рамках нашей концепции мы создаём EdLoop вместе с вами, и в первую очередь берём в разработку фичи, о которых просите именно вы.
+
+                            EdLoop — наш совместный с вами труд. И низкий поклон вам за это.
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="heading5">
+                        <h5 class="mb-0">
+                            <a class="q-btn  collapsed" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                Я провожу уроки на другой онлайн доске, чем ваша доска лучше?
+
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordion">
+                        <div class="card-body">
+                            Во-первых у нас не просто доска, у нас ещё и связь.<br>
+                            Во-вторых наша связь работает стабильнее чем у многих сервисов и тратит меньше ресурсов.<br>
+                            В-третьих, некоторые доски реализованы на устаревшей Flash-технологии.<br>
+                            В-четвёртых, не все доски создавались специально для школьного преподавания. Многие разрабатывались для бизнес-обучения и ориентируются на него.<br>
+                            В-пятых, мы очень быстро развиваемся, всё, что вы видите сейчас, сделано с мая 2019 года. И это только 1/1000 того, что задумано.
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="heading6">
+                        <h5 class="mb-0">
+                            <a class="q-btn collapsed" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                А какие планы у вас по развитию вашей платформы?
+
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordion">
+                        <div class="card-body">
+                            Мы не можем раскрывать конкретику. Но представьте, что всё необходимое для преподавания находится на одном сайте.
+
+                            Помимо проведения уроков, вы: ищите учеников, общаетесь с родителями в Вотсапп, проверяете оплату, платите налоги, подсчитываете проведённые уроки, обучаетесь сами… Так вот, место на котором всё это происходит называется
+                            EdLoop!
+
+                            Вот такие у нас планы.
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="heading7">
+                        <h5 class="mb-0">
+                            <a class="q-btn  collapsed" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                                Я — ученик. Могу ли я…
+
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordion">
+                        <div class="card-body">
+                            На данный момент у учителей и учеников равные права. Ученик может регистрироваться и приглашать учителя. Может даже просто делать на платформе домашнюю работу вместе с одноклассником.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="heading8">
+                        <h5 class="mb-0">
+                            <a class="q-btn  collapsed" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                                Остались вопросы? Свяжитесь с нами (чат ВК, ссылка).
+
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordion">
+                        <div class="card-body">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.0/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="{% static 'assets/js/landing1.js' %}"></script>
+
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+    </script>
+
+</body>
+
+</html>

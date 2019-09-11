@@ -283,6 +283,7 @@ i{
     .main__steps .steps{
         flex-direction: column;
         width: 90%;
+        margin-top: 20px;
     }
 
     .main__steps .steps .step{

@@ -89,17 +89,27 @@ main{
 .main__steps .steps{
     width: 60%;
     margin: 0 auto;
+    margin-top: 100px;
     display: flex;
     justify-content: space-between;
 }
 
 .main__steps .steps .step{
+    text-align: center;
     width: 30%;
     margin-bottom: 150px;
 }
 
-.main__steps .steps .arrow .arr{
-    font-size: 1.5rem;
+.main__steps .steps .step p{
+    margin-top: 20px;
+}
+
+.main__steps .steps .arrow{
+    padding: 3.5rem;
+}
+
+i{
+    font-size: 3.5rem;
 }
 
 .main__job{
@@ -130,7 +140,24 @@ main{
 }
 
 .main__advantages .cards .card{
-    width: 25%;
+    border-radius: 7px;
+    background-color: #f7f7f7;
+    text-align: center;
+    width: 24%;
+    padding: 20px;
+}
+
+.main__advantages .cards .card h5{
+    margin-top: 20px;
+}
+
+.main__advantages .cards .card p{
+    margin-top: 20px;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
 }
 
 .swiper-slide{
@@ -138,6 +165,11 @@ main{
 }
 .swiper-slide img{
     width: 60%;
+}
+
+.swiper-slide p{
+     width: 60%;
+     margin: 0 auto;
 }
 
 .main__job.feedback{
@@ -162,8 +194,9 @@ main{
     text-align: center;
 }
 .main__team .cards{
+    margin-top: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .main__team .cards .card{
     width: 33%;
@@ -180,12 +213,19 @@ main{
     text-align: center;
 }
 .main__upgrade .cards{
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
 }
 .main__upgrade .cards .card{
     width: 33%;
+    text-align: center;
 }
+
+.main__upgrade .cards .card p{
+    margin-top: 20px;
+}
+
 .main__upgrade .cards .card h3{
     text-align: center;
 }
@@ -214,18 +254,32 @@ main{
         width: 90%;
     }
 
+    .main__form .text{
+        text-align: left;
+    }
+
+    .main__form .text h1{
+        font-size: 1.5rem;
+    }
+
+    .main__form .text h3{
+        font-size: 1rem;
+    }
+
     .main__form .form_cards{
         flex-direction: column;
     }
 
     .main__form .form_cards .card{
         margin: 0;
+        margin-bottom: 30px;
     }
 
     .main__steps .text{
         width: 90%;
         margin: 0 auto;
     }
+
     .main__steps .steps{
         flex-direction: column;
         width: 90%;
@@ -234,42 +288,75 @@ main{
     .main__steps .steps .step{
         width: 90%;
         margin: 0 auto;
+        margin-bottom: 1rem;
     }
 
     .main__steps .steps .arrow{
         margin: 0 auto;
     }
 
-    .main__steps .steps .arrow .arr{
-        content: "";
+    .main__steps .steps .arrow{
+        padding: 0;
+        margin-bottom: 2rem;
     }
 
     .main__job{
+        width: 100%;
+        text-align: center;
+    }
+
+    .main__job iframe{
         width: 90%;
+        height: 300px !important;
     }
 
     .main__advantages{
         width: 90%;
     }
-
+    .main__advantages .text h2{
+        text-align: left;
+    }
     .main__advantages .cards{
         flex-direction: column;
 
     }
 
     .main__advantages .cards .card{
+        text-align: left;
         width: 100%;
+        background-color: inherit;
+        padding: 0;
     }
 
+    .main__advantages .cards .card i{
+        display: none;
+    }
+
+    .main__advantages .cards .card p{
+        margin-top: 0;
+    }
+
+    .main__advantages .cards .card h5{
+        margin-top: 0;
+    }
 
     .swiper-slide img{
         width: 100%;
+    }
+
+    .swiper-slide p{
+        width: 90%;
+        margin: 0 auto;
+        text-align: left;
     }
 
     .main__team{
         width: 90%;
     }
 
+    .main__team img{
+        display: none;
+    }
     .main__team .cards{
         flex-direction: column;
     }
@@ -278,6 +365,9 @@ main{
         width: 100%;
     }
 
+    .main__team .cards .card h3{
+        text-align: left;
+    }
     .main__upgrade{
         width: 90%;
     }
@@ -287,7 +377,12 @@ main{
     }
 
     .main__upgrade .cards .card{
+        margin-bottom: 20px;
         width: 100%;
+    }
+
+    .main__upgrade .cards .card p{
+        text-align: left;
     }
 
     .main__questions{

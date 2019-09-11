@@ -21,6 +21,7 @@
 
     <!-- Page -->
     <link rel="stylesheet" href="{% static 'assets/css/landing1.css' %}">
+    <script src="https://kit.fontawesome.com/ba974a8480.js"></script>
 </head>
 
 <body>
@@ -71,7 +72,7 @@
         <div class="main__form">
             <div class="text">
                 <h1>EdLoop - платформа для индивидуальных онлайн занятий<h1>
-                        <h3>Онлайн доски, стабильная видеосвязь, обмен учебниками, чат и другие инструменты для репетитора на одном сайте.</h3>
+                <h3>Онлайн доски, стабильная видеосвязь, обмен учебниками, чат и другие инструменты для репетитора на одном сайте.</h3>
             </div>
 
             <div class="form_cards">
@@ -108,30 +109,32 @@
 
             <div class="steps">
                 <div class="step">
-                    <i> asd </i>
+                    <i class="fas fa-sign-in-alt"></i>
                     <p>Зарегистрируйте
                         репетитора и ученика
                         <p>
                 </div>
                 <div class="arrow">
-                    <p></p>
-                    <p class="arr">&rarr;</p>
+                    <i class="far fa-arrow-alt-circle-right"></i>
                 </div>
                 <div class="step">
-                    <i> asd </i>
+                    <i class="far fa-user-circle"></i>
+                    <i class="far fa-comments"></i>
+                    <i class="far fa-user-circle"></i>
                     <p>Создайте комнату и пригласите ученика,
                         передав ему номер созданной комнаты
                         <p>
                 </div>
                 <div class="arrow">
-                    <p></p>
-                    <p class="arr">&rarr;</p>
+                    <i class="far fa-arrow-alt-circle-right"></i>
                 </div>
 
                 <div class="step">
-                    <i> asd </i>
+                    <i class="far fa-user-circle"></i>
+                    <i class="fas fa-desktop"></i>
+                    <i class="far fa-user-circle"></i>
                     <p>Занимайтесь с учеником на онлайн доске с видеосвязью, чатом и обменом файлов
-                        <p>
+                    <p>
                 </div>
             </div>
         </div>
@@ -153,15 +156,55 @@
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
-                    <div class="swiper-slide"><img src="/media/static/images/screen1.png"></div>
-                    <div class="swiper-slide"><img src="/media/static/images/screen2.png"></div>
-                    <div class="swiper-slide"><img src="/media/static/images/screen3.png"></div>
-                    <div class="swiper-slide"><img src="/media/static/images/screen4.png"></div>
-                    <div class="swiper-slide"><img src="/media/static/images/screen5.png"></div>
-                    <div class="swiper-slide"><img src="/media/static/images/screen6.png"></div>
+                    <div class="swiper-slide">
+                        <img src="/media/static/images/screen1.png">
+                        <p>Регистрируйтесь: пишите своё реальное имя, загружайте фотографию.
+                        И приступайте к работе!
+                        Вариант «Войти в готовую комнату» используйте, если ученик пришёл первым, создал комнату и уже начал работать. Выкладывает там ДЗ, например.
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/media/static/images/screen2.png">
+                        <p>В комнате создавайте новые доски.
+Демонстрируйте собеседнику экран, отправляйте файлы, переписывайтесь в чате.
+
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/media/static/images/screen3.png">
+                        <p>Меняйте размеры окна видео и перемещайте окна. Всё для вашего удобства!
+
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/media/static/images/screen4.png">
+                        <p>1. Загружайте изображения<br>
+2. Перемещайте и масштабируйте. <br>
+3. Можно работать с двумя учениками одновременно. Но только если они находятся за одним компьютером.
+Обратите внимание, что можно заниматься даже  вокалом.
+
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/media/static/images/screen5.png">
+                        <p>Рисуйте на доске, пишите текст, перемещайте объекты.
+Даже маленькие дети быстро осваивают все инструменты.
+
+Используйте разные цвета для работы.
+
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/media/static/images/screen6.png">
+                        <p>Как-то так может выглядеть ваша совместная работа.
+                            <br>
+                                Пробуйте!
+                        </p>
+                    </div>
                 </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
+
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
 
             <br>
@@ -174,23 +217,31 @@
 
             <div class="cards">
                 <div class="card">
-                    <h3>Создаем с репетиторами</h3>
+                    <i class="fas fa-user-friends"></i>
+                    <h5>Создаем с репетиторами</h5>
                     <p> Мы тесно общаемся с репетиторами в нашем сообществе Вконтакте и создаем новые
                         инструменты EdLoop по просьбам самих репетиторов, в удобном для них виде.</p>
                     </p>
                 </div>
                 <div class="card">
-                    <h3>Все инструменты в одном сайте</h3>
+                    <div>
+                        <i class="fab fa-skype"></i>
+                        <i class="fab fa-whatsapp"></i>
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <h5>Все инструменты в одном сайте</h5>
                     <p> Ненужно открывать 7 приложений чтобы провести онлайн урок, мы создали все необходимые инструменты на одном сайте.</p>
                     </p>
                 </div>
                 <div class="card">
-                    <h3>Разберется даже ребенок</h3>
+                    <i class="fas fa-baby"></i>
+                    <h5>Разберется даже ребенок</h5>
                     <p> Мы делаем EdLoop максимально простым и понятным для детей, чтобы они могли заниматься беспрепятственно.</p>
                     </p>
                 </div>
                 <div class="card">
-                    <h3>Специально для репетиторов</h3>
+                    <i class="fas fa-clipboard-list"></i>
+                    <h5>Специально для репетиторов</h5>
                     <p> Иснтрументы EdLoop разработаны специально для онлайн занятий. </p>
                     </p>
                 </div>
@@ -208,6 +259,8 @@
             <div class="text">
                 <h2>Команда EdLoop</h2>
             </div>
+            <img src="/media/static/images/team.png" style="width: 100%;">
+
             <div class="cards">
                 <div class="card">
                     <h3>Анастасия Позднякова</h3>
@@ -235,17 +288,20 @@
             </div>
             <div class="cards">
                 <div class="card">
+                    <i class="fab fa-vk"></i>
                     <p> Вступайте в сообщество VK
                         Советуйте, тестируйте, помогайте создавать инструменты и пользуйтесь ими</p>
-                    <button class="btn">Вступить в VK</button>
+                    <button class="btn btn-primary">Вступить в VK</button>
                 </div>
                 <div class="card">
+                    <i class="fas fa-sign-in-alt"></i>
                     <p> Регистрируйтесь и пользуйтесь EdLoop бесплатно</p>
-                    <button class="btn">Зарегистрироваться</button>
+                    <button class="btn btn-primary">Зарегистрироваться</button>
                 </div>
                 <div class="card">
+                    <i class="fas fa-school"></i>
                     <p>Вы школа с дистанционным обучением? Создайте свой продукт на базе EdLoop. Свяжитесь с нами.</p>
-                    <button class="btn">Связаться</button>
+                    <button class="btn btn-primary">Связаться</button>
                 </div>
             </div>
         </div>
@@ -415,11 +471,12 @@
     <script src="{% static 'assets/js/landing1.js' %}"></script>
 
     <script>
-        var swiper = new Swiper('.swiper-container', {
-            pagination: {
-              el: '.swiper-pagination',
-            },
-          });
+    var swiper = new Swiper('.swiper-container', {
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
     </script>
 
 </body>
